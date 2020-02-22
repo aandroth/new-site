@@ -1,3 +1,17 @@
+body {
+    background: url("Images/Cartoon_wood.png") 0 0 repeat;
+    background-size: 1200px 1200px;
+}
+
+.theBody {
+    background: url("Images/Cartoon_wood.png") 0 0 repeat;
+    background-size: 1200px 1200px;
+}
+
+.Open_Folder {
+    background: url("Images/top-secret-folder-open.png") 0 0 no-repeat;
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +28,24 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-Home {
+    background-color: #282c34;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
@@ -35,4 +59,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Menu_Bar {
+    background-image: url('Images/Menu_Bar.png');
+    background-size: cover;
+    position: fixed;
+    float: left;
+    bottom: 0%;
+    right: 0%;
+    width: 52%;
+    height: 16%;
+    background-repeat: no-repeat;
+}
+
+.Menu_Bar_Total {
+    background-image: url('Images/Menu_Bar.png');
+    background-size: cover;
+    position: fixed;
+    float: left;
+    right: 0%;
+    bottom: 0%;
+    width: 52%;
+    height: 16%;
+    background-repeat: no-repeat;
+}
+
+.Menu_Bar_Button_Outer {
+    top: 0%;
+    left: 2%;
+    width: 10%;
+    height: 100%;
+    float: right;
+    background-color: black;
+}
+
+.Menu_Bar_Button_Inner {
+    visibility: hidden;
+    top:0%;
+    left: 0%;
+    width: 100.5%;
+    height: 100%;
+    float: left;
+    background-color: rgba(100, 100, 255, 0.5);
+}
+
+.Invisible_Menu_Button {
+    visibility: hidden;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    float: left;
 }
