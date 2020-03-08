@@ -6,10 +6,375 @@ body {
 .theBody {
     background: url("Images/Cartoon_wood.png") 0 0 repeat;
     background-size: 1200px 1200px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.Menu_Button_Highlight {
+    background-color: rgba(50, 50, 255, 0.5);
+    width: 100%;
+    height: 100%;
 }
 
 .Open_Folder {
-    background: url("Images/top-secret-folder-open.png") 0 0 no-repeat;
+    background: url("Images/top-secret-folder-open.png") no-repeat;
+    background-size: 100%, 150%;
+    position: absolute;
+    width: 99.9%;
+    height: 100%;
+}
+
+.Open_Folder_Paperstack {
+    background: url("Images/Paper_Stack.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    left: 10%;
+    width: 38%;
+    height: 90%;
+    padding-left: 3%;
+    padding-right: 1%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.Resume_Paperstack {
+    background: url("Images/Paper_Stack.png") no-repeat;
+    background-size: 100% 100%;
+    left: 10%;
+    width: 50%;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.iOS_App {
+    background-image: url('Images/FS_Screens/iOS_Menu.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-top: 2%;
+    margin-right: 5%;
+    padding-left: 1.5%;
+    padding-top: 2%;
+    padding-bottom: 35%;
+}
+
+.iOS_Video_Player {
+    background-image: url('Images/FS_Screens/iOS_Videos_Watching.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding-left: 1.5%;
+    padding-top: 2%;
+}
+
+.iOS_Video_Player_Back_Button {
+    background-color: blue;
+    background-image: url('./Images/FS_Screens/Back_Button.png');
+    position: absolute;
+    width: 15%;
+    height: 10%;
+    background-size: 100% 100%;
+    top: 1%;
+    left: 1%;
+}
+
+#ios_menu {
+    background-image: url('Images/FS_Screens/iOS_Menu.png');
+}
+#ios_research {
+    background-image: url('Images/FS_Screens/iOS_Research.png');
+}
+#ios_video {
+    background-image: url('Images/FS_Screens/iOS_Videos_Viewing.png');
+}
+#ios_video_open {
+    background-image: url('Images/FS_Screens/iOS_Videos_Viewing_Open.png');
+}
+#ios_map {
+    background-image: url('Images/FS_Screens/iOS_Map.png');
+}
+#ios_articles {
+    background-image: url('Images/FS_Screens/iOS_Articles.png');
+}
+#ios_ask {
+    background-image: url('Images/FS_Screens/iOS_AskAScientist.png');
+}
+#ios_ask_email {
+    background-image: url('Images/FS_Screens/iOS_Email.png');
+}
+#ios_about {
+    background-image: url('Images/FS_Screens/iOS_About.png');
+}
+
+.FS_Info_Paperstack {
+    background-image: url('Images/Paper_Stack.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 45%;
+    height: 100%;
+    float: right;
+    margin-top: 2%;
+    margin-right: 5%;
+    padding-left: 4%;
+    padding-right: 2%;
+    padding-bottom: 20%;
+}
+
+.FS_Button_Outer {
+    position: relative;
+    width: 100%;
+    height: 16%;
+}
+
+.FS_Button_Outer_Back {
+    position: absolute;
+    left: 4%;
+    top: 13.5%;
+    width: 5%;
+    height: 4%;
+}
+
+.FS_Button_Outer_Back_Videos {
+    position: absolute;
+    left: 4%;
+    top: 13.5%;
+    width: 6%;
+    height: 4%;
+}
+
+.FS_Button_Outer_Back_Articles {
+    position: absolute;
+    left: 4%;
+    top: 12%;
+    width: 2%;
+    height: 3%;
+}
+
+.FS_Button_Outer_Back_About {
+    position: absolute;
+    left: 4%;
+    top: 12.5%;
+    width: 2%;
+    height: 2.5%;
+}
+
+.FS_Button_Outer_Research {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.FS_Button_Outer_Video {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.FS_Button_Outer_Articles {
+    position: relative;
+    width: 100%;
+    height: 9%;
+}
+
+.FS_Button_Outer_Scientist {
+    position: relative;
+    width: 51%;
+    height: 73%;
+    top: 4.5%;
+    left: 3%;
+}
+
+.FS_Button_Outer_Ask {
+    position: relative;
+    width: 95%;
+    height: 9%;
+    top: 14%;
+    left: 3%;
+}
+
+.FS_Button_Inner {
+    float: left;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    top: 0px;
+    left: 0px;
+    width: 98%;
+    height: 90%;
+    padding-top: 0%;
+}
+
+.SketchDesk {
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.SketchPad {
+    background: url("Images/Notepad_Canvas.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    width: 90%;
+    height: 85%;
+}
+
+.SketchPad_Canvas {
+    margin-top: 1%;
+    margin-left: 10%;
+    width: 87%;
+    height: 96%;
+}
+
+.ColorBlock {
+    background-size: 100% 100%;
+    float: right;
+    width: 3%;
+    height: 10%;
+    top: 0%;
+    right: 0%;
+}
+#Color0 {
+    background-color: red;
+}
+#Color1 {
+    background-color: green;
+}
+
+#Color2 {
+    background-color: blue;
+}
+#Color3 {
+    background-color: black;
+}
+
+#Color4 {
+    background-color: white;
+}
+
+.Checkers_Page {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.Checkers_Info_Paperstack {
+    background-image: url('Images/Paper_Stack.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 35%;
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Pokemon_Info_Page {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.Pokemon_Info_Page_Gameboy {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.Pokemon_Info_Paperstack {
+    background-image: url('Images/Paper_Stack.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 40%;
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Gameboy_Cover {
+    background-image: url('Images/Cartoon_Gameboy_Cover.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.Gameboy_Face_Bg {
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.Gameboy_Button_Stop {
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    height: 20%;
+    background-image: url('./Images/Cartoon_Gameboy_Stop.png');
+}
+
+.Pokemon_Game {
+    background-color: greenyellow;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+.Open_Dinaki_Book {
+    background-image: url('Images/Open_Book.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    padding-top: 5%;
+    padding-left: 15%;
+}
+
+.Dinaki_Page_Block {
+    background-size: 100% 100%;
+    width: 40%;
+    height: 90%;
+    float: left;
+    margin-right: 5%;
 }
 
 .App {
@@ -39,11 +404,6 @@ body {
 }
 
 .App-Home {
-    background-color: #282c34;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
 }
@@ -61,47 +421,52 @@ body {
   }
 }
 
-.Menu_Bar {
-    background-image: url('Images/Menu_Bar.png');
-    background-size: cover;
+
+footer {
     position: fixed;
-    float: left;
+    width: 100%;
+    height: 15%;
     bottom: 0%;
-    right: 0%;
-    width: 52%;
-    height: 16%;
-    background-repeat: no-repeat;
+    right: -4%;
 }
 
 .Menu_Bar_Total {
-    background-image: url('Images/Menu_Bar.png');
     background-size: cover;
-    position: fixed;
-    float: left;
-    right: 0%;
+    float: right;
     bottom: 0%;
-    width: 52%;
-    height: 16%;
+    width: 55%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.Menu_Bar_EndCap{
+    background-image: url('Images/Menu_Bar_EndCap.png');
+    background-size: cover;
+    float: left;
+    top: 0%;
+    width: 3%;
+    height: 100%;
     background-repeat: no-repeat;
 }
 
 .Menu_Bar_Button_Outer {
+    background-image: url('Images/Menu_Bar_Space.png');
+    background-size: cover;
+    float: left;
     top: 0%;
-    left: 2%;
-    width: 10%;
+    width: 13%;
     height: 100%;
-    float: right;
+    background-repeat: no-repeat;
     background-color: black;
 }
 
 .Menu_Bar_Button_Inner {
-    visibility: hidden;
-    top:0%;
-    left: 0%;
-    width: 100.5%;
-    height: 100%;
-    float: left;
-    background-color: rgba(100, 100, 255, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
 }
 
 .Invisible_Menu_Button {
@@ -111,4 +476,32 @@ body {
     width: 100%;
     height: 100%;
     float: left;
+}
+
+#Menu_Home {
+    background-image: url('Images/Menu_Bar_Homey.png');
+}
+
+#Menu_Profile {
+    background-image: url('Images/Menu_Bar_Folder.png');
+}
+
+#Menu_FS {
+    background-image: url('Images/Menu_Bar_FS.png');
+}
+
+#Menu_Sketchpad {
+    background-image: url('Images/Menu_Bar_SketchPad.png');
+}
+
+#Menu_Checkers {
+    background-image: url('Images/Menu_Bar_Checkerboard.png');
+}
+
+#Menu_Pokeball {
+    background-image: url('Images/Menu_Bar_Pokeball.png');
+}
+
+#Menu_Dinaki {
+    background-image: url('Images/Menu_Bar_Book.png');
 }
