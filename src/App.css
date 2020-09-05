@@ -241,6 +241,17 @@ body {
     height: 96%;
 }
 
+.ImageBlock_Party {
+    background: url("Images/Party_On.png") no-repeat;
+    background-size: 100% 100%;
+    border: solid black 2px;
+    float: right;
+    width: 2.7%;
+    height: 9.5%;
+    top: 0%;
+    right: 0%;
+}
+
 .ColorBlock {
     background-size: 100% 100%;
     float: right;

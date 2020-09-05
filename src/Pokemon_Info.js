@@ -5,11 +5,11 @@ import CartoonGameboyHighlight from './Images/Cartoon_Gameboy_Full_Highlight.png
 
 function Pokemon_Game(props) {
 
-    const [source, setSource] = useState("http://localhost/PokeGame.php");
+    //const [source, setSource] = useState("http://localhost/PokeGame.php");
+    const [source, setSource] = useState("http://aquinsgreatgames.com:7777/PokeGame.php");
 
     window.onload = () =>{
         document.getElementById("iframeWindow").focus();
-        //props.showFooterFn(false);
         setSource();
     }
 
@@ -43,19 +43,19 @@ function Pokemon_Game(props) {
 
 function Pokemon_Info(props) {
 
-    const [isShown, setIsShown] = useState(false);
+    const [gameBoyHighlight, setGameBoyHighlight] = useState(false);
 
     const pokemonInfoText = "This game was created in Macromedia Flash MX, using Java as the coding language. It was birthed from the idea that the player can start with any pokemon type that they would like. The controls are the arrow keys for movement, and the space bar for selections. Like the website, this game is very much a work in progress, so check back as I add in the other pokemon types! Controls are the Arrow Keys and the Space Bar. To get started, just click on the Gameboy.";
 
     return (
         <div className="Pokemon_Info_Page">
             <img src={CartoonGameboy} alt="CartoonGameboy" style={{ position: "absolute", marginLeft: "5%", marginTop: "1%", width: "35%" }}
-                onMouseEnter={() => setIsShown(true)}
+                onMouseEnter={() => setGameBoyHighlight(true)}
                 onMouseUp={() => props.goToGamePage()}
             />
-            {isShown && (
+            {gameBoyHighlight && (
                 <img src={CartoonGameboyHighlight} alt="CartoonGameboy" style={{ position: "absolute", marginLeft: "5%", marginTop: "1%", width: "35%", }}
-                    onMouseLeave={() => setIsShown(false)}
+                    onMouseLeave={() => setGameBoyHighlight(false)}
                     onMouseUp={() => props.goToGamePage()}
                 />
             )}
