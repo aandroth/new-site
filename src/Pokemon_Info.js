@@ -5,7 +5,7 @@ import CartoonGameboyHighlight from './Images/Cartoon_Gameboy_Full_Highlight.png
 
 function Pokemon_Game(props) {
 
-    const [source, setSource] = useState("http://localhost/PokeGame.php");
+    const [source, setSource] = useState("http://aquinsgreatgames.com:7777/PokeGame.php");
 
     window.onload = () =>{
         document.getElementById("iframeWindow").focus();

@@ -8,6 +8,7 @@ import Profile_Folder from './Profile_Folder';
 import SketchPad from './SketchPad';
 import CheckersInfo from './Checkers_Info';
 import PokemonInfo from './Pokemon_Info';
+import PeekaInfo from './Peeka_Info';
 import Dinaki_Book from './Dinaki.js';
 
 function Home() {
@@ -56,7 +57,8 @@ function App() {
                 <Route path="/profilefolder" component={Profile_Folder} />
                 <Route path="/sketchpad" component={SketchPad} />
                 <Route path="/checkersinfo" component={CheckersInfo} />
-                <Route path="/pokemoninfo" render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} /> } />
+                <Route path="/pokemoninfo" render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} />} />
+                <Route path="/peekainfo" component={PeekaInfo} />
                 <Route path="/dinaki" component={Dinaki_Book} />
 
                 {showFooter && (

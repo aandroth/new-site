@@ -1,0 +1,72 @@
+
+Get the site online and point the iframes to the correct addresses
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Home Page:
+
+Add images to get to the diferent pages.
+
+Add a little figure that keeps trying to get the user's mouse (or multiple chars all fighting to ge the user's attention, like between Unity, Unreal, and JS based games)
+Add a way to change css files to switch between home, office, outside (Just changes the bg for now. Later on it should change fonts and more)
+
+Add page to show projects worked on at AIE
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Profile Folder:
+Get the folder and pages to always be the same height(maybe I need to put in a stretchable middle div?)
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+FS App:
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Sketchpad:
+Add pen, pencil, and marker
+Put in RGB sliders or numeric inputs
+Put in undo and redo
+
+Add gallery:
+Save to Gallery with image, title, and artist's name
+Saving anim where the canvas goes into a picture frame
+Explore gallery
+Save to gallery button
+Explore gallery button
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Checkers:
+
+Put in info text
+
+Get the checkers AI working
+Let people play the game of checkers against it
+People can click on the checkers and place them
+Checkers can be kinged
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Pokemon:
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Dinaki:
+(Can I put the editor and game on the site? Maybe just an example level?)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Unity Game Library:
+Get the game library onto a page.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Going forward:
+Design a way to add more pages and show off skills
+
+Sites to take inspiration from:
+http://www.adamhartwig.co.uk/skills
+https://caferati.me/
+https://sebkay.com/process/
+https://jacekjeznach.com/useful-css-techniques/
+http://findmatthew.com/ - Cool anim with the lines at the top of the page.
+http://driesvanbroeck.be/work/ - Cool anims.
+https://maltegruhl.com/ - The anims when scrolling down did make me want to get all the way to the end.
+https://www.legworkstudio.com/ - Throwing down the cards is a cool idea.
+https://bepatrickdavid.com/ - Especially like the way things tilt when scrolling fast.
+
