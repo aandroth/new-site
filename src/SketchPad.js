@@ -14,6 +14,8 @@ function SketchPad() {
     let prevX = 0;
     let prevY = 0;
 
+    let changableColor0 = "rgb(0, 0, 0)";
+
     const colorSelect = (colorSelected) => {
 
         partyMarkerColor = 'rgb(' + currRed + ', ' + currGrn + ', ' + currBlu + ')';
@@ -119,6 +121,10 @@ function SketchPad() {
         partyMarkerIsActive = !partyMarkerIsActive;
     }
 
+    const changeColor0 = (color) => {
+        partyMarkerIsActive = !partyMarkerIsActive;
+    }
+
     return (
         <div className="SketchDesk" onMouseUp={() => deactivateDraw()}>
             <div className="SketchPad">
@@ -138,7 +144,7 @@ function SketchPad() {
             </div>
             <div id="Color4" className="ColorBlock" onMouseUp={() => colorSelect('wht')}>
             </div>
-            <div className="ColorBlock" onMouseUp={() => partyMarkerToggle()} style={{ backgroundColor: "grey" }}>
+            <div className="ImageBlock_Party" onMouseUp={() => partyMarkerToggle()}>
             </div>
         </div>
     );

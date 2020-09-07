@@ -57,8 +57,7 @@ function App() {
                 <Route path="/profilefolder" component={Profile_Folder} />
                 <Route path="/sketchpad" component={SketchPad} />
                 <Route path="/checkersinfo" component={CheckersInfo} />
-                <Route path="/pokemoninfo" render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} />} />
-                <Route path="/peekainfo" component={PeekaInfo} />
+                <Route path="/pokemoninfo" render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} /> } />
                 <Route path="/dinaki" component={Dinaki_Book} />
 
                 {showFooter && (
