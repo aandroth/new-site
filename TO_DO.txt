@@ -10,7 +10,7 @@ Add images to get to the diferent pages.
 Add a little figure that keeps trying to get the user's mouse (or multiple chars all fighting to ge the user's attention, like between Unity, Unreal, and JS based games)
 Add a way to change css files to switch between home, office, outside (Just changes the bg for now. Later on it should change fonts and more)
 
-Add page to show projects worked on at AIE
+Add page to show projects worked on at AIE, Peeka, and HCL
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Profile Folder:
@@ -20,6 +20,7 @@ Get the folder and pages to always be the same height(maybe I need to put in a s
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 FS App:
 
+Fix the damn button highlights!
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sketchpad:

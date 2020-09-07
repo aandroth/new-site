@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -23,6 +23,7 @@ function App() {
 
     const [showFooter, setShowFooter] = useState(true);
     const [homeH, setHomeH] = useState(false);
+    const [uaf_home_menu, setUaf_home_menuH] = useState(false);
     const [folderH, setFolderH] = useState(false);
     const [fsH, setFsH] = useState(false);
     const [sketchH, setSketchH] = useState(false);
@@ -46,6 +47,8 @@ function App() {
         setShowFooter(val);
     }
 
+    //<div className="Menu_Button_Highlight" onMouseLeave={() => setHomeH(false)} ></div>
+
     return (
         <Router basename="/">
             <div className="theBody">
@@ -59,15 +62,30 @@ function App() {
                 <Route path="/pokemoninfo" render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} /> } />
                 <Route path="/dinaki" component={Dinaki_Book} />
 
+                <div className="container">
+                    <button type="button" class="button">
+                        BB
+                    </button>
+                        <ul>
+                            <li>Option 1</li>
+                            <li>Option 2</li>
+                            <li>Option 3</li>
+                            <li>Option 4</li>
+                        </ul>
+                </div>
+
                 {showFooter && (
                     <footer>
                         <div className="Menu_Bar_Total">
                             <div className="Menu_Bar_EndCap">
                             </div>
-                            <div className="Menu_Bar_Button_Outer" onMouseUp={() => menuFns.mouseUp('/Home')} >
+                            <div className="Menu_Bar_Button_Outer" onMouseUp={() => menuFns.mouseUp('/uaf_home')} >
                                 <div id="Menu_Home" className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setHomeH)}>
                                     {homeH && (
-                                        <div className="Menu_Button_Highlight" onMouseLeave={() => setHomeH(false)} ></div>
+                                        <div className="Menu_Button_Menu" onMouseLeave={() => setHomeH(false)}>
+                                            <div className="Menu_Button_Highlight"></div>
+                                            <div className="Menu_Button_Highlight"></div>
+                                        </div>
                                     )}
                                 </div>
                             </div>
