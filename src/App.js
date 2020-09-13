@@ -126,7 +126,7 @@ function App() {
                                                                 <div id="Menu_TechnoViking" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/uaf_home')} ></div>
                                                             </li>
                                                             <li className="Menu_List_Item">
-                                                                <div id="Menu_FS" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/uaf_home')} ></div>
+                                                                <div id="Menu_Robo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/uaf_home')} ></div>
                                                             </li>
                                                         </ul>
                                                     </div>
