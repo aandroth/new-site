@@ -1,5 +1,6 @@
 
-Get the site online and point the iframes to the correct addresses
+Point the iframes to the correct addresses
+Correct the website symbol and name
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -10,7 +11,10 @@ Add images to get to the diferent pages.
 Add a little figure that keeps trying to get the user's mouse (or multiple chars all fighting to ge the user's attention, like between Unity, Unreal, and JS based games)
 Add a way to change css files to switch between home, office, outside (Just changes the bg for now. Later on it should change fonts and more)
 
-Add page to show projects worked on at AIE, Peeka, and HCL
+Change the main menu to UAF, AIE, Peeka, and HCL
+Add sub-menus to the main menu that have images that link to the projects from these categories
+Add pages to show projects worked on at AIE, Peeka, and HCL
+Adding an animation of these coming from the menu bar would be awesome
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Profile Folder:
@@ -21,12 +25,13 @@ Get the folder and pages to always be the same height(maybe I need to put in a s
 FS App:
 
 Fix the damn button highlights!
+I believe that this will require building out the buttons as actual divs in a column
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Sketchpad:
 Add pen, pencil, and marker
 Put in RGB sliders or numeric inputs
-Put in undo and redo
+Put in undo and redo buttons, as well as allow this through ctrl+z and ctrl+y 
 
 Add gallery:
 Save to Gallery with image, title, and artist's name
@@ -47,6 +52,8 @@ Checkers can be kinged
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Pokemon:
+
+Get the pokemon game working
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Dinaki:
@@ -70,4 +77,5 @@ http://driesvanbroeck.be/work/ - Cool anims.
 https://maltegruhl.com/ - The anims when scrolling down did make me want to get all the way to the end.
 https://www.legworkstudio.com/ - Throwing down the cards is a cool idea.
 https://bepatrickdavid.com/ - Especially like the way things tilt when scrolling fast.
+https://www.mauriciopoppe.com/notes/programming/programming-languages/cpp-refresher/ Really cool interactive animation at the top and bottom
 
