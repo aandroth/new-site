@@ -15,6 +15,11 @@ import AIE_GleethGod from './AIE_GleethGod';
 import AIE_RobotRepair from './AIE_RobotRepair.js';
 import AIE_TechnoViking from './AIE_TechnoViking';
 
+import Peeka_GrayBubbleGoo from './Peeka_GrayBubbleGoo';
+import Peeka_Pearl from './Peeka_Pearl.js';
+import Peeka_Rockhound from './Peeka_Rockhound';
+import Peeka_YukkityUck from './Peeka_YukkityUck';
+
 function Home() {
     return (
         <div className="App">
@@ -59,6 +64,10 @@ function App() {
                 <Route path="/gleethgod" component={AIE_GleethGod} />
                 <Route path="/robotrepair" component={AIE_RobotRepair} />
                 <Route path="/technoviking" component={AIE_TechnoViking} />
+                <Route path="/graybubblegoo" component={Peeka_GrayBubbleGoo} />
+                <Route path="/pearl" component={Peeka_Pearl} />
+                <Route path="/rockhound" component={Peeka_Rockhound} />
+                <Route path="/yukkityuck" component={Peeka_YukkityUck} />
 
                 {showFooter && (
                     <footer>
@@ -113,13 +122,13 @@ function App() {
                                                     <div>
                                                         <ul className="Menu_List">
                                                             <li className="Menu_List_Item">
-                                                                <div id="Menu_Gleeth" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/gleethgod')} ></div>
+                                                                <div id="Menu_TechnoViking" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/technoviking')} ></div>
                                                             </li>
                                                             <li className="Menu_List_Item">
                                                                 <div id="Menu_Robo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/robotrepair')} ></div>
                                                             </li>
                                                             <li className="Menu_List_Item">
-                                                                <div id="Menu_TechnoViking" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/technoviking')} ></div>
+                                                                <div id="Menu_Gleeth" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/gleethgod')} ></div>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -136,26 +145,29 @@ function App() {
                                     </td>
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
-                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setAie_home_menuH(false)}>
-                                                {aie_home_menuH && (
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setPeeka_home_menuH(false)}>
+                                                {peeka_home_menuH && (
                                                     <div>
                                                         <ul className="Menu_List">
                                                             <li className="Menu_List_Item">
-                                                                <div id="Menu_Gleeth" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/gleethgod')} ></div>
+                                                                <div id="Menu_Pearl" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pearl')} ></div>
                                                             </li>
                                                             <li className="Menu_List_Item">
-                                                                <div id="Menu_Robo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/robotrepair')} ></div>
+                                                                <div id="Menu_YukkityUck" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/yukkityuck')} ></div>
                                                             </li>
                                                             <li className="Menu_List_Item">
-                                                                <div id="Menu_TechnoViking" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/technoviking')} ></div>
+                                                                <div id="Menu_Rockhound" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/rockhound')} ></div>
+                                                            </li>
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_GrayBubbleGoo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/graybubblegoo')} ></div>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 )}
-                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setAie_home_menuH)}>
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setPeeka_home_menuH)}>
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_Peeka" className="Menu_Button_Menu_Img"></div>
-                                                    {aie_home_menuH && (
+                                                    {peeka_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
                                                 </div>

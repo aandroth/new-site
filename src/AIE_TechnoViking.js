@@ -17,7 +17,7 @@ function TechnoVikingInfo(props) {
                 {vikingInfoText}
             </p>
             <h1>
-                Techno Viking
+                My Role
             </h1>
             <p>
                 {vikingRoleText}

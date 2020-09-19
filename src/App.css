@@ -617,13 +617,153 @@ table.Menu_Bar_Table tr td{
 }
 
 #Menu_GrayBubbleGoo {
-    background-image: url('Images/Menu_Bar_Gleeth.png');
+    background-image: url('Images/Menu_Bar_GrayBubbleGoo.png');
+}
+
+#Menu_Rockhound {
+    background-image: url('Images/Menu_Bar_Rockhound.png');
 }
 
 #Menu_YukkityUck {
-    background-image: url('Images/Menu_Bar_VikingHelm.png');
+    background-image: url('Images/Menu_Bar_YukkityUck.png');
 }
 
 #Menu_Pearl {
-    background-image: url('Images/Menu_Bar_Robo.png');
+    background-image: url('Images/Menu_Bar_Pearl.png');
+}
+
+.PolaroidFrameOuter {
+    border: 10px solid white;
+    width: 25%;
+    height: 45%;
+    position: absolute;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.PolaroidFrameInner {
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 98%;
+    height: 78%;
+}
+
+.PolaroidLabel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0%;
+    top: 100%;
+    height: 25%;
+}
+#PolaroidLabel_Book {
+    background-image: url('./Images/Peeka/Book.png');
+    width: 30%;
+}
+#PolaroidLabel_Vr {
+    background-image: url('./Images/Peeka/VR.png');
+    width: 25%;
+}
+
+#PolaroidBook0 {
+    left: 1%;
+    top: 3%;
+}
+#PolaroidVr0 {
+    left: 18%;
+    top: 1%;
+}
+#PolaroidBook1 {
+    left: 2%;
+    bottom: 3%;
+}
+#PolaroidVr1 {
+    left: 25%;
+    bottom: 1%;
+}
+#PolaroidBook2 {
+    right: 1%;
+    top: 20%;
+}
+#PolaroidVr2 {
+    right: 20%;
+    top: 35%;
+}
+
+#GrayBubbleGoo_Book0 {
+    background-image: url('./Images/Peeka/GrayBubbleGoo/GrayBubbleGooBook0.png');
+}
+#GrayBubbleGoo_Vr0 {
+    background-image: url('./Images/Peeka/GrayBubbleGoo/GrayBubbleGooVr0.png');
+}
+#GrayBubbleGoo_Book1 {
+    background-image: url('./Images/Peeka/GrayBubbleGoo/GrayBubbleGooBook1.png');
+}
+#GrayBubbleGoo_Vr1 {
+    background-image: url('./Images/Peeka/GrayBubbleGoo/GrayBubbleGooVr1.png');
+}
+#GrayBubbleGoo_Book2 {
+    background-image: url('./Images/Peeka/GrayBubbleGoo/GrayBubbleGooBook2.png');
+}
+#GrayBubbleGoo_Vr2 {
+    background-image: url('./Images/Peeka/GrayBubbleGoo/GrayBubbleGooVr2.png');
+}
+
+#YukkityUck_Book0 {
+    background-image: url('./Images/Peeka/YukkityUck/YukkityUckBook0.png');
+}
+#YukkityUck_Vr0 {
+    background-image: url('./Images/Peeka/YukkityUck/YukkityUckVr0.png');
+}
+#YukkityUck_Book1 {
+    background-image: url('./Images/Peeka/YukkityUck/YukkityUckBook1.png');
+}
+#YukkityUck_Vr1 {
+    background-image: url('./Images/Peeka/YukkityUck/YukkityUckVr1.png');
+}
+#YukkityUck_Book2 {
+    background-image: url('./Images/Peeka/YukkityUck/YukkityUckBook2.png');
+}
+#YukkityUck_Vr2 {
+    background-image: url('./Images/Peeka/YukkityUck/YukkityUckVr2.png');
+}
+
+#Rockhound_Book0 {
+    background-image: url('./Images/Peeka/Rockhound/RockhoundBook0.png');
+}
+#Rockhound_Vr0 {
+    background-image: url('./Images/Peeka/Rockhound/RockhoundVr0.png');
+}
+#Rockhound_Book1 {
+    background-image: url('./Images/Peeka/Rockhound/RockhoundBook1.png');
+}
+#Rockhound_Vr1 {
+    background-image: url('./Images/Peeka/Rockhound/RockhoundVr1.png');
+}
+#Rockhound_Book2 {
+    background-image: url('./Images/Peeka/Rockhound/RockhoundBook2.png');
+}
+#Rockhound_Vr2 {
+    background-image: url('./Images/Peeka/Rockhound/RockhoundVr2.png');
+}
+
+#Pearl_Book0 {
+    background-image: url('./Images/Peeka/Pearl/PearlBook0.png');
+}
+#Pearl_Vr0 {
+    background-image: url('./Images/Peeka/Pearl/PearlVr0.png');
+}
+#Pearl_Book1 {
+    background-image: url('./Images/Peeka/Pearl/PearlBook1.png');
+}
+#Pearl_Vr1 {
+    background-image: url('./Images/Peeka/Pearl/PearlVr1.png');
+}
+#Pearl_Book2 {
+    background-image: url('./Images/Peeka/Pearl/PearlBook2.png');
+}
+#Pearl_Vr2 {
+    background-image: url('./Images/Peeka/Pearl/PearlVr2.png');
 }
