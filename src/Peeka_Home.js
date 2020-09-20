@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function UAF_Home() {
+function Peeka_Home() {
 
     return (
         <div className="Pokemon_Info_Paperstack">
@@ -25,18 +25,18 @@ function UAF_Home() {
         </div>
     );
 }
- 
-function UAF_Home_Page(props) {
+
+function Peeka_Home_Page(props) {
 
     const [showInfo, setShowInfo] = useState(true);
 
     return (
         <div style={{ width: "100%", height: "100%", }}>
             {showInfo && (
-                <UAF_Home />
+                <Peeka_Home />
             )}
         </div>
     );
 }
 
-export default UAF_Home_Page;
+export default Peeka_Home_Page;

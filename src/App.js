@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import * as menuFns from './Utilities/MenuBarButtons'
+
+import UAF_Home from './UAF_Home';
 import FS_App from './FS_App';
 import Profile_Folder from './Profile_Folder';
 import SketchPad from './SketchPad';
@@ -11,6 +13,7 @@ import PokemonInfo from './Pokemon_Info';
 import Dinaki_Book from './Dinaki.js';
 import Menu_Bar_Space from "./Images/Menu_Bar_Space.png";
 
+import AIE_Home from './AIE_Home';
 import AIE_GleethGod from './AIE_GleethGod';
 import AIE_RobotRepair from './AIE_RobotRepair.js';
 import AIE_TechnoViking from './AIE_TechnoViking';
@@ -55,15 +58,20 @@ function App() {
 
                 <Route path="/" exact component={Home} />
                 <Route path="/home" component={Home} />
+
+                <Route path="/uaf_home" component={UAF_Home} />
                 <Route path="/fsapp" component={FS_App} />
                 <Route path="/profilefolder" component={Profile_Folder} />
                 <Route path="/sketchpad" component={SketchPad} />
                 <Route path="/checkersinfo" component={CheckersInfo} />
                 <Route path="/pokemoninfo" render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} />} />
                 <Route path="/dinaki" component={Dinaki_Book} />
+
+                <Route path="/aie_home" component={AIE_Home} />
                 <Route path="/gleethgod" component={AIE_GleethGod} />
                 <Route path="/robotrepair" component={AIE_RobotRepair} />
                 <Route path="/technoviking" component={AIE_TechnoViking} />
+
                 <Route path="/graybubblegoo" component={Peeka_GrayBubbleGoo} />
                 <Route path="/pearl" component={Peeka_Pearl} />
                 <Route path="/rockhound" component={Peeka_Rockhound} />
@@ -133,7 +141,7 @@ function App() {
                                                         </ul>
                                                     </div>
                                                 )}
-                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setAie_home_menuH)}>
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setAie_home_menuH)} onMouseUp={() => menuFns.mouseUp('/aie_home')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_AIE" className="Menu_Button_Menu_Img"></div>
                                                     {aie_home_menuH && (
