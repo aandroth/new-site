@@ -20,6 +20,8 @@ import Peeka_Pearl from './Peeka_Pearl.js';
 import Peeka_Rockhound from './Peeka_Rockhound';
 import Peeka_YukkityUck from './Peeka_YukkityUck';
 
+import HireMe from './HireMe';
+
 function Home() {
     return (
         <div className="App">
@@ -68,6 +70,8 @@ function App() {
                 <Route path="/pearl" component={Peeka_Pearl} />
                 <Route path="/rockhound" component={Peeka_Rockhound} />
                 <Route path="/yukkityuck" component={Peeka_YukkityUck} />
+
+                <Route path="/me" component={HireMe} />
 
                 {showFooter && (
                     <footer>
