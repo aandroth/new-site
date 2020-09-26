@@ -9,47 +9,73 @@
 }
 
 .NameCard {
-    background-color: gold;
+    background-image: url("./Images/BG/Bg_Name.png");
+    background-size: cover;
     position: absolute;
-    border: 3px solid goldenrod;
-    width: 90%;
-    height: 10%;
-    left: 5%;
-    top: 1%;
+    width: 100%;
+    min-height: 10px;
+    height: 12%;
+    left: 0%;
+    top: 0%;
 }
     .NameCard p {
+        color: white;
         font-size: 50px;
+        font-weight: 700;
         position: relative;
-        top: -50%;
+        top: -100%;
         left: 5%;
     }
 
-.Fullstack_Block {
+#NameCard {
+    top: 5%;
+}
+
+.Fullstack_Block_3 {
     float: left;
     width: 100%;
     min-height: 500px;
     background-color: darkgreen;
-    background-repeat: repeat;
-    background-size: contain;
     position: relative;
     overflow: hidden;
+    background-image: url("./Images/BG/Web/Bg_Web.png");
 }
-.Combo_Block {
+.Combo_Block_3 {
     float: left;
     width: 100%;
     min-height: 500px;
     background-color: teal;
     position: relative;
     right: 30%;
+    background-image: url("./Images/BG/Bg_Combo2.png");
 }
-
-.Unity_Block {
+.Unity_Block_3 {
     float: left;
     width: 100%;
     min-height: 500px;
     background-color: blue;
     position: relative;
     right: 40%;
+    background-image: url("./Images/BG/Games/Bg_Games.png");
+}
+
+.Fullstack_Block_2 {
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    background-color: darkgreen;
+    position: relative;
+    overflow: hidden;
+    background-image: url("./Images/BG/Web/Bg_Web.png");
+}
+.Unity_Block_2 {
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    background-color: blue;
+    position: relative;
+    right: 50%;
+    background-image: url("./Images/BG/Games/Bg_Games.png");
 }
 
 .Unity_Col {
@@ -58,7 +84,6 @@
     position: relative;
     left: 70%;
     color: deepskyblue;
-    background-image: url("./Images/Bg_Combo.png");
 }
     .Unity_Col p {
         color: deepskyblue;
@@ -101,15 +126,24 @@
 
 .Blurb {
     padding: 10px;
-    padding-top: 100%;
+    padding-top: 30%;
 }
-.Blurb p {
-    background-color: black;
-    border: 5px solid rgb(30,30,30);
-    padding: 5px;
-}
+    .Blurb p {
+        background-color: black;
+        border: 5px solid rgb(30,30,30);
+        padding: 5px;
+        border-radius: 10px;
+    }
 
 #BioBlurb {
     position: relative;
-    top: -250px;
+    top: -100px;
+}
+
+#AIE_Blurb {
+    right: 5%;
+}
+
+#HCL_Blurb {
+    right: 0%;
 }

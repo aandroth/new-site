@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import * as menuFns from './Utilities/MenuBarButtons'
@@ -24,6 +23,7 @@ import Peeka_Rockhound from './Peeka_Rockhound';
 import Peeka_YukkityUck from './Peeka_YukkityUck';
 
 import HireMe from './HireMe';
+import PracticeCards from './PracticeCards';
 
 function Home() {
     return (
@@ -80,6 +80,7 @@ function App() {
                 <Route path="/yukkityuck" component={Peeka_YukkityUck} />
 
                 <Route path="/me" component={HireMe} />
+                <Route path="/practicecards" component={PracticeCards} />
 
                 {showFooter && (
                     <footer>
