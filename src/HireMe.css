@@ -10,11 +10,12 @@
 
 .NameCard {
     background-image: url("./Images/BG/Bg_Name.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     width: 100%;
     min-height: 10px;
-    height: 12%;
+    height: 13%;
     left: 0%;
     top: 0%;
 }
@@ -23,13 +24,17 @@
         font-size: 50px;
         font-weight: 700;
         position: relative;
-        top: -100%;
+        top: -60%;
         left: 5%;
     }
 
 #NameCard {
     top: 5%;
+    width: 100%;
 }
+    #NameCard p {
+        top: -90%;
+    }
 
 .Fullstack_Block_3 {
     float: left;
@@ -37,7 +42,6 @@
     min-height: 500px;
     background-color: darkgreen;
     position: relative;
-    overflow: hidden;
     background-image: url("./Images/BG/Web/Bg_Web.png");
 }
 .Combo_Block_3 {
@@ -47,7 +51,7 @@
     background-color: teal;
     position: relative;
     right: 30%;
-    background-image: url("./Images/BG/Bg_Combo2.png");
+    background-image: url("./Images/BG/Bg_Combo3.png");
 }
 .Unity_Block_3 {
     float: left;
@@ -62,16 +66,15 @@
 .Fullstack_Block_2 {
     float: left;
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
     background-color: darkgreen;
     position: relative;
-    overflow: hidden;
     background-image: url("./Images/BG/Web/Bg_Web.png");
 }
 .Unity_Block_2 {
     float: left;
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
     background-color: blue;
     position: relative;
     right: 50%;
@@ -134,16 +137,61 @@
         padding: 5px;
         border-radius: 10px;
     }
+    .Blurb h1 {
+        background-color: black;
+        border: 5px solid rgb(30,30,30);
+        padding: 5px;
+        border-radius: 10px;
+    }
 
 #BioBlurb {
     position: relative;
     top: -100px;
 }
 
+#Peeka_Experience_BlurbTitle {
+    position: relative;
+    width: 100%;
+    left: -70%;
+    top: -50px;
+    color: deepskyblue;
+}
+
+#HCL_Experience_BlurbTitle {
+    position: relative;
+    width: 100%;
+    right: -50%;
+    top: -50px;
+    color: lightgreen;
+}
+
+#AIE_Education_BlurbTitle {
+    position: relative;
+    width: 100%;
+    left: -70%;
+    top: -50px;
+    color: deepskyblue;
+}
+
+#HCL_Education_BlurbTitle {
+    position: relative;
+    width: 50%;
+    right: -110%;
+    top: -50px;
+    color: lightgreen;
+}
+
 #AIE_Blurb {
-    right: 5%;
+    position: relative;
+    width: 150%;
+    left: -60%;
+    color: deepskyblue;
 }
 
 #HCL_Blurb {
-    right: 0%;
+    position: relative;
+    width: 130%;
+    right: -20%;
+    top: 45px;
+    color: lightgreen;
 }
