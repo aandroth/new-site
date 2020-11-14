@@ -146,7 +146,11 @@
 
 #BioBlurb {
     position: relative;
-    top: -100px;
+    top: -50px;
+}
+#YearsBlurb {
+    position: relative;
+    top: 200px;
 }
 
 #Peeka_Experience_BlurbTitle {

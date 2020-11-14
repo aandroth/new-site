@@ -532,8 +532,8 @@ td {
 .Menu_Bar_Button_Outer {
     bottom: 0px;
     width: 10em;
-    min-width: 10px;
-    min-height: 10px;
+    min-width: 100px;
+    min-height: 100px;
     position: absolute;
 }
 
@@ -547,7 +547,8 @@ td {
     position: relative;
     bottom: 0px;
     width: 100%;
-    min-height: 114px;
+    min-width: 100px;
+    min-height: 100px;
     background-color: rgb(0,0,0,0.5);
 }
 
@@ -563,6 +564,28 @@ td {
 table.Menu_Bar_Table tr td{
     width: 500px;
 }
+
+
+#Menu_Top {
+    background-image: url('Images/MenuBar_Home.png');
+}
+
+#Menu_EDU {
+    background-image: url('Images/MenuBar_EDU.png');
+}
+
+#Menu_Exp {
+    background-image: url('Images/MenuBar_Exp.png');
+}
+
+#Menu_Projects {
+    background-image: url('Images/MenuBar_Projects.png');
+}
+
+#Menu_Contact {
+    background-image: url('Images/MenuBar_Contact.png');
+}
+
 
 #Menu_Home {
     background-image: url('Images/Menu_Bar_Homey.png');

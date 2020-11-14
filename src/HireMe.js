@@ -24,7 +24,7 @@ function Summary() {
                     <div className="Unity_Block_3">
                         <div className="Unity_Col">
                             <div className="Blurb">
-                                <p id="UnityBlurb">
+                                <p id="YearsBlurb">
                                     <strong>1+ years of professional experience with the Unity Game Engine</strong>
                                 </p>
                             </div>
@@ -32,13 +32,13 @@ function Summary() {
                         <div className="Combo_Col">
                             <div className="Blurb">
                                 <p id="BioBlurb">
-                                    Alaskan-born software developer. Looking to make my mark by creating games, software, and tools that customers love using, and that my fellow engineers love working with. Forever a student, I am always looking for new things to learn.
+                                    Alaskan-born software developer. Looking to make my mark by creating games, software, and tools that customers love using, and that my fellow engineers love working with. Forever a student, I am always looking for new things to learn.<br /><br />
                                 </p>
                             </div>
                         </div>
                         <div className="Fullstack_Col">
                             <div className="Blurb">
-                                <p id="FullstackBlurb">
+                                <p id="YearsBlurb">
                                     <strong>1 year of Full-stack Development creating microservices</strong>
                                 </p>
                             </div>
@@ -160,26 +160,33 @@ function Projects() {
                         <div className="Unity_Col">
                             <div className="Blurb">
                                 <p id="UnityBlurb">
-                                    <strong>Class and Game Jam Projects:</strong><br />
+                                    <strong>Class and Game Jam Projects:</strong><br /><br/>
                                     <strong>Gleeth God</strong><br />
+                                    First-year project at AIE, I created the enemy AIs.<br /><br />
                                     <strong>Repair Robot</strong><br />
+                                    Done for the 2020 Global Game Jam, creating the UI.<br /><br />
                                     <strong>Techno Viking</strong><br />
-                                    <strong>Dinaki Adventures</strong>
+                                    Final project at AIE, I created the graphical effects.<br /><br />
+                                    <strong>Dinaki Adventures</strong><br />
+                                    Final project at the University of Alaska Fairbanks. This was a two-part project with a level editor and a player for the levels. I had a part in all features.<br /><br />
                                 </p>
                             </div>
                         </div>
                         <div className="Combo_Col">
                             <div className="Blurb">
                                 <p id="BioBlurb">
-                                    <strong>Game Library Interface</strong>
+                                    <strong>Game Library Interface</strong><br />
+                                    Interactive game library created so that users could browse through VR games. The library was created in the Unity Game Engine, and has a desktop and online versions.<br /><br />
                                 </p>
                             </div>
                         </div>
                         <div className="Fullstack_Col">
                             <div className="Blurb">
                                 <p id="FullstackBlurb">
-                                    <strong>Personal Website</strong><br/>
-                                    <strong>Kanban Board</strong>
+                                    <strong>Personal Website</strong><br />
+                                    Originally written in plain Js and Html, I've rewritten it in ReactJs.<br /><br />
+                                    <strong>Kanban Board</strong><br />
+                                    Final learning project at HCL America. Was a to-do list application written in ReactJs, and complete with a backend written in Java that saved into a MySQL database, and was deployed on AWS.<br /><br />
                                 </p>
                             </div>
                         </div>
@@ -213,12 +220,12 @@ function Contact() {
                     <div className="Fullstack_Col">
                         <div className="Blurb">
                             <p id="HCL_Blurb">
-                                <strong>Phone:</strong><br />
-                                <strong>(907)750-2617</strong>
-                            </p>
-                            <p id="HCL_Blurb">
                                 <strong>Email:</strong><br />
                                 <strong>aaron.lee.andrews@gmail.com</strong>
+                            </p>
+                            <p id="HCL_Blurb">
+                                <strong>Phone:</strong><br />
+                                <strong>(907)750-2617</strong>
                             </p>
                         </div>
                     </div>

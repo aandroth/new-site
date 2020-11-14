@@ -120,7 +120,7 @@ function App() {
                                                 )}
                                                 <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setUaf_home_menuH)} onMouseUp={() => menuFns.mouseUp('/uaf_home')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
-                                                    <div id="Menu_UAF" className="Menu_Button_Menu_Img"></div>
+                                                    <div id="Menu_Top" className="Menu_Button_Menu_Img"></div>
                                                     {uaf_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
@@ -148,7 +148,7 @@ function App() {
                                                 )}
                                                 <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setAie_home_menuH)} onMouseUp={() => menuFns.mouseUp('/aie_home')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
-                                                    <div id="Menu_AIE" className="Menu_Button_Menu_Img"></div>
+                                                    <div id="Menu_Exp" className="Menu_Button_Menu_Img"></div>
                                                     {aie_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
@@ -179,7 +179,69 @@ function App() {
                                                 )}
                                                 <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setPeeka_home_menuH)}>
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
-                                                    <div id="Menu_Peeka" className="Menu_Button_Menu_Img"></div>
+                                                    <div id="Menu_EDU" className="Menu_Button_Menu_Img"></div>
+                                                    {peeka_home_menuH && (
+                                                        <div className="Menu_Button_Highlight"></div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="Menu_Bar_Button_Holder">
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setPeeka_home_menuH(false)}>
+                                                {peeka_home_menuH && (
+                                                    <div>
+                                                        <ul className="Menu_List">
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_Pearl" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pearl')} ></div>
+                                                            </li>
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_YukkityUck" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/yukkityuck')} ></div>
+                                                            </li>
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_Rockhound" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/rockhound')} ></div>
+                                                            </li>
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_GrayBubbleGoo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/graybubblegoo')} ></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                )}
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setPeeka_home_menuH)}>
+                                                    <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
+                                                    <div id="Menu_Projects" className="Menu_Button_Menu_Img"></div>
+                                                    {peeka_home_menuH && (
+                                                        <div className="Menu_Button_Highlight"></div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="Menu_Bar_Button_Holder">
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setPeeka_home_menuH(false)}>
+                                                {peeka_home_menuH && (
+                                                    <div>
+                                                        <ul className="Menu_List">
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_Pearl" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pearl')} ></div>
+                                                            </li>
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_YukkityUck" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/yukkityuck')} ></div>
+                                                            </li>
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_Rockhound" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/rockhound')} ></div>
+                                                            </li>
+                                                            <li className="Menu_List_Item">
+                                                                <div id="Menu_GrayBubbleGoo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/graybubblegoo')} ></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                )}
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setPeeka_home_menuH)}>
+                                                    <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
+                                                    <div id="Menu_Contact" className="Menu_Button_Menu_Img"></div>
                                                     {peeka_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
