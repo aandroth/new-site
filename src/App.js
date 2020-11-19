@@ -23,6 +23,8 @@ import Peeka_Rockhound from './Peeka_Rockhound';
 import Peeka_YukkityUck from './Peeka_YukkityUck';
 
 import HireMe from './HireMe';
+import HireMe_Peeka from './HireMe_Peeka';
+import HireMe_HCL from './HireMe_HCL';
 import PracticeCards from './PracticeCards';
 
 function Home() {
@@ -34,19 +36,35 @@ function Home() {
     );
 }
 
+// List items from the Project menu section
+//<li>
+//    <div id="Menu_Pearl" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pearl')} ></div>
+//</li>
+//    <li>
+//        <div id="Menu_YukkityUck" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/yukkityuck')} ></div>
+//    </li>
+//    <li>
+//        <div id="Menu_Rockhound" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/rockhound')} ></div>
+//    </li>
+//    <li>
+//        <div id="Menu_GrayBubbleGoo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/graybubblegoo')} ></div>
+//    </li>
+
 function App() {
 
     const [showFooter, setShowFooter] = useState(true);
-    const [uaf_home_menuH, setUaf_home_menuH] = useState(false);
-    const [aie_home_menuH, setAie_home_menuH] = useState(false);
-    const [peeka_home_menuH, setPeeka_home_menuH] = useState(false);
-    const [hcl_home_menuH, setHcl_home_menuH] = useState(false);
+    const [home_menuH, setHome_menuH] = useState(false);
+    const [exp_home_menuH, setExp_home_menuH] = useState(false);
+    const [edu_home_menuH, setEdu_home_menuH] = useState(false);
+    const [proj_home_menuH, setProj_home_menuH] = useState(false);
+    const [contact_home_menuH, setContact_home_menuH] = useState(false);
 
     const onEnterForAll = (hFn) => {
-        setUaf_home_menuH(false);
-        setAie_home_menuH(false);
-        setPeeka_home_menuH(false);
-        setHcl_home_menuH(false);
+        setHome_menuH(false);
+        setExp_home_menuH(false);
+        setEdu_home_menuH(false);
+        setProj_home_menuH(false);
+        setContact_home_menuH(false);
 
         hFn(true);
     }
@@ -58,8 +76,11 @@ function App() {
         <Router basename="/">
             <div className="theBody">
 
-                <Route path="/" exact component={Home} />
-                <Route path="/home" component={Home} />
+                <Route path="/" exact component={HireMe} />
+                <Route path="/home" component={HireMe} />
+
+                <Route path="/peeka" component={HireMe_Peeka} />
+                <Route path="/hcl" component={HireMe_HCL} />
 
                 <Route path="/uaf_home" component={UAF_Home} />
                 <Route path="/fsapp" component={FS_App} />
@@ -88,40 +109,16 @@ function App() {
                             <table className="Menu_Bar_Table">
                                 <tr>
                                     <td>
-                                        <div className="Menu_Bar_EndCap">
+                                        <div className="WAS_Menu_Bar_EndCap">
                                         </div>
                                     </td>
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
-                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setUaf_home_menuH(false)}>
-                                                {uaf_home_menuH && (
-                                                    <div>
-                                                        <ul className="Menu_List">
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_FS" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/fsapp')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Profile" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/profilefolder')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Sketchpad" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/sketchpad')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Checkers" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/checkersinfo')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Pokeball" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pokemoninfo')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Dinaki" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/dinaki')} ></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                )}
-                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setUaf_home_menuH)} onMouseUp={() => menuFns.mouseUp('/uaf_home')} >
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setHome_menuH(false)}>
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setHome_menuH)} onMouseUp={() => menuFns.mouseUp('/')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_Top" className="Menu_Button_Menu_Img"></div>
-                                                    {uaf_home_menuH && (
+                                                    {home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
                                                 </div>
@@ -130,26 +127,23 @@ function App() {
                                     </td>
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
-                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setAie_home_menuH(false)}>
-                                                {aie_home_menuH && (
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setExp_home_menuH(false)}>
+                                                {exp_home_menuH && (
                                                     <div>
                                                         <ul className="Menu_List">
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_TechnoViking" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/technoviking')} ></div>
+                                                            <li>
+                                                                <div id="Menu_Peeka" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/peeka')} ></div>
                                                             </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Robo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/robotrepair')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Gleeth" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/gleethgod')} ></div>
+                                                            <li>
+                                                                <div id="Menu_HCL" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/hcl')} ></div>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 )}
-                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setAie_home_menuH)} onMouseUp={() => menuFns.mouseUp('/aie_home')} >
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setExp_home_menuH)} onMouseUp={() => menuFns.mouseUp('/#Experience')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_Exp" className="Menu_Button_Menu_Img"></div>
-                                                    {aie_home_menuH && (
+                                                    {exp_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
                                                 </div>
@@ -158,29 +152,17 @@ function App() {
                                     </td>
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
-                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setPeeka_home_menuH(false)}>
-                                                {peeka_home_menuH && (
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setEdu_home_menuH(false)}>
+                                                {edu_home_menuH && (
                                                     <div>
                                                         <ul className="Menu_List">
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Pearl" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pearl')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_YukkityUck" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/yukkityuck')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Rockhound" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/rockhound')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_GrayBubbleGoo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/graybubblegoo')} ></div>
-                                                            </li>
                                                         </ul>
                                                     </div>
                                                 )}
-                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setPeeka_home_menuH)}>
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setEdu_home_menuH)} onMouseUp={() => menuFns.mouseUp('/#Education')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_EDU" className="Menu_Button_Menu_Img"></div>
-                                                    {peeka_home_menuH && (
+                                                    {edu_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
                                                 </div>
@@ -189,29 +171,17 @@ function App() {
                                     </td>
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
-                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setPeeka_home_menuH(false)}>
-                                                {peeka_home_menuH && (
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setProj_home_menuH(false)}>
+                                                {proj_home_menuH && (
                                                     <div>
                                                         <ul className="Menu_List">
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Pearl" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pearl')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_YukkityUck" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/yukkityuck')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Rockhound" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/rockhound')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_GrayBubbleGoo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/graybubblegoo')} ></div>
-                                                            </li>
                                                         </ul>
                                                     </div>
                                                 )}
-                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setPeeka_home_menuH)}>
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setProj_home_menuH)} onMouseUp={() => menuFns.mouseUp('/#Projects')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_Projects" className="Menu_Button_Menu_Img"></div>
-                                                    {peeka_home_menuH && (
+                                                    {proj_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
                                                 </div>
@@ -220,29 +190,17 @@ function App() {
                                     </td>
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
-                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setPeeka_home_menuH(false)}>
-                                                {peeka_home_menuH && (
+                                            <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setContact_home_menuH(false)} onMouseUp={() => menuFns.mouseUp('/#Contact')} >
+                                                {contact_home_menuH && (
                                                     <div>
                                                         <ul className="Menu_List">
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Pearl" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/pearl')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_YukkityUck" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/yukkityuck')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_Rockhound" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/rockhound')} ></div>
-                                                            </li>
-                                                            <li className="Menu_List_Item">
-                                                                <div id="Menu_GrayBubbleGoo" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/graybubblegoo')} ></div>
-                                                            </li>
                                                         </ul>
                                                     </div>
                                                 )}
-                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setPeeka_home_menuH)}>
+                                                <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setContact_home_menuH)}>
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_Contact" className="Menu_Button_Menu_Img"></div>
-                                                    {peeka_home_menuH && (
+                                                    {contact_home_menuH && (
                                                         <div className="Menu_Button_Highlight"></div>
                                                     )}
                                                 </div>

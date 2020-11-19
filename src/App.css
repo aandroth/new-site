@@ -440,13 +440,12 @@ footer {
     position: absolute;
     right: 20%;
     bottom: -1%;
-    width: 31%;
+    width: 40%;
     height: 100%;
     background-repeat: no-repeat;
 }
 
 .Menu_Bar_Table {
-    background-color: rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
 }
@@ -474,9 +473,6 @@ td {
     height: 120px;
     background-size: contain;
 }
-    .Menu_Button_Space_Img:hover {
-        bottom: -1010px;
-    }
 
 .Menu_Button_Menu_Img {
     background-size: contain;
@@ -540,6 +536,8 @@ td {
 .Menu_Bar_Button_Holder {
     width: 100%;
     height: 100%;
+    min-width: 100px;
+    min-height: 100px;
     position: relative;
 }
 
@@ -562,7 +560,9 @@ td {
 }
 
 table.Menu_Bar_Table tr td{
-    width: 500px;
+    width: 700px;
+    min-width: 150px;
+    left: 0px;
 }
 
 
@@ -578,6 +578,14 @@ table.Menu_Bar_Table tr td{
     background-image: url('Images/MenuBar_Exp.png');
 }
 
+#Menu_Games {
+    background-image: url('Images/Menu_Bar_Games.png');
+}
+
+#Menu_Fullstack {
+    background-image: url('Images/Menu_Bar_FullStack.png');
+}
+
 #Menu_Projects {
     background-image: url('Images/MenuBar_Projects.png');
 }
@@ -586,6 +594,9 @@ table.Menu_Bar_Table tr td{
     background-image: url('Images/MenuBar_Contact.png');
 }
 
+#Menu_HCL {
+    background-image: url('Images/Symbol_HCL.png');
+}
 
 #Menu_Home {
     background-image: url('Images/Menu_Bar_Homey.png');
