@@ -1,3 +1,7 @@
+.HireMeDiv{
+    overflow: hidden;
+}
+
 .TitleBlock {
     background-color: gold;
     position: absolute;
@@ -24,7 +28,7 @@
         font-size: 50px;
         font-weight: 700;
         position: relative;
-        top: -60%;
+        top: -75%;
         left: 5%;
     }
 
@@ -33,28 +37,41 @@
     width: 100%;
 }
     #NameCard p {
-        top: -60%;
+        top: -70%;
     }
 
+#NameCard_Title {
+    max-width: 50%;
+    position: absolute;
+    float: right;
+    color: aqua;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 5.5%;
+    margin-left: 37%;
+}
 
 .Info_NameCard {
     background-image: url("./Images/BG/Bg_Name.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    width: 100%;
-    min-height: 10px;
-    height: 13%;
+    width: 200vh;
+    min-height: 10vh;
+    height: 20vh;
+    padding-top: 1vh;
     left: 0%;
-    top: 4%;
+    top: 1vh;
 }
     .Info_NameCard p {
         position: absolute;
         color: white;
-        font-size: 50px;
+        font-size: 3em;
         font-weight: 700;
-        top: -45%;
-        left: 5%;
+        margin-left: 5vw;
+        margin-top: -2vh;
+        max-width: 70%;
+        height: 10vh;
     }
 
 .Info_Page_Blurb {
@@ -82,20 +99,21 @@
 .Games_Info_Page {
     float: left;
     width: 100%;
-    height: 100%;
-    min-height: 1000px;
-    background-color: darkblue;
-    position: absolute;
+    height: 200vh;
     background-image: url("Images/BG/Games/Bg_Games.png");
+    overflow-x: hidden;
+}
+.Combo_Info_Page {
+    background-image: url("Images/BG/Bg_Combo.png");
+    width: 100vw;
+    height: 400vh;
+    overflow-x: hidden;
 }
 .FullStack_Info_Page {
-    float: left;
-    width: 100%;
-    height: 100%;
-    min-height: 1000px;
-    background-color: darkblue;
-    position: absolute;
     background-image: url("Images/BG/Web/Bg_Web.png");
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 .Fullstack_Block_3 {
@@ -105,6 +123,7 @@
     background-color: darkgreen;
     position: relative;
     background-image: url("./Images/BG/Web/Bg_Web.png");
+    overflow-x: hidden;
 }
 .Combo_Block_3 {
     float: left;
@@ -132,6 +151,7 @@
     background-color: darkgreen;
     position: relative;
     background-image: url("./Images/BG/Web/Bg_Web.png");
+    overflow-x: hidden;
 }
 .Unity_Block_2 {
     float: left;

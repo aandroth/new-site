@@ -1,15 +1,8 @@
 body {
-    background: url("Images/Cartoon_wood.png") 0 0 repeat;
-    background-size: 1200px 1200px;
-}
-
-.theBody {
-    background: url("Images/Cartoon_wood.png") 0 0 repeat;
-    background-size: 1200px 1200px;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
+    background-color: black;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .Open_Folder {
@@ -427,20 +420,32 @@ body {
   }
 }
 
-
-footer {
-    position: fixed;
+.theBody {
     width: 100%;
-    height: 15%;
-    bottom: 0%;
-    right: -4%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
 }
 
+.pageBody {
+    height: 100%;
+    overflow: hidden;
+}
+
+tfoot {
+    position: sticky;
+    float: right;
+    right: 0vw;
+    bottom: 0vh;
+    width: 55vw;
+    max-width: 55vw;
+    overflow-x: no-content;
+}
 .Menu_Bar_Total {
-    position: absolute;
-    right: 20%;
+    left: 0%;
     bottom: -1%;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background-repeat: no-repeat;
 }
@@ -525,20 +530,22 @@ td {
     background-repeat: no-repeat;
 }
 
+.Menu_Bar_Button_Holder {
+    max-width: 100%;
+    height: 100%;
+    min-width: 100px;
+    min-height: 15%;
+    position: relative;
+    background-color: red;
+}
+
 .Menu_Bar_Button_Outer {
     bottom: 0px;
-    width: 10em;
+    width: 100%;
     min-width: 100px;
     min-height: 100px;
     position: absolute;
-}
-
-.Menu_Bar_Button_Holder {
-    width: 100%;
-    height: 100%;
-    min-width: 100px;
-    min-height: 100px;
-    position: relative;
+    float: right;
 }
 
 .Menu_Bar_Button_Inner {
@@ -569,6 +576,9 @@ table.Menu_Bar_Table tr td{
 #Menu_Top {
     background-image: url('Images/MenuBar_Home.png');
 }
+#Menu_Resume {
+    background-image: url('Images/Menu_Bar_Resume.png');
+}
 
 #Menu_EDU {
     background-image: url('Images/MenuBar_EDU.png');
@@ -588,6 +598,10 @@ table.Menu_Bar_Table tr td{
 
 #Menu_Projects {
     background-image: url('Images/MenuBar_Projects.png');
+}
+
+#Menu_Kanban {
+    background-image: url('Images/MenuBar_Kanban.png');
 }
 
 #Menu_Contact {

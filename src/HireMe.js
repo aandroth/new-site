@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HireMe.css";
 
 function TitleBlocks() {
@@ -18,7 +19,7 @@ function TitleBlocks() {
 function Summary() {
 
     return (
-        <div>
+        <div className="HireMeDiv">
             <div className="Fullstack_Block_3">
                 <div className="Combo_Block_3">
                     <div className="Unity_Block_3">
@@ -35,6 +36,14 @@ function Summary() {
                                     Alaskan-born software developer now living in the Greater Seattle Area. Looking to make my mark by creating games, software, and tools that customers love using, and that my fellow engineers love working with. Forever a student, I am always looking for new things to learn.<br /><br />
                                 </p>
                             </div>
+                            <div className="Blurb">
+                                <p id="BioBlurb"
+                                    style={{ textAlign: "center", width: "50%", marginLeft: "25%" }}>
+                                    <Link to={'/resume'} style={{ color: "aqua" }}>
+                                        <strong style={{fontSize: "3em"}}>Resume</strong>
+                                    </Link>
+                                </p>
+                            </div>
                         </div>
                         <div className="Fullstack_Col">
                             <div className="Blurb">
@@ -46,7 +55,8 @@ function Summary() {
                     </div>
                 </div>
                 <div className="NameCard" id="NameCard">
-                    <p>AARON ANDREWS</p>
+                    <p id="NameCard_Name">AARON ANDREWS</p>
+                    <p id="NameCard_Title">Software Developer</p>
                 </div>
             </div>
         </div>
@@ -63,6 +73,7 @@ function Experience() {
                             <h1 id="Peeka_Experience_BlurbTitle">
                                 <strong>Peeka,<br/>
                                 Unity Developer<br />
+                                Sep 2020 - Present<br />
                                 Nov 2018 - July 2019</strong>
                             </h1>
                             <p id="AIE_Blurb">
@@ -176,9 +187,9 @@ function Projects() {
                             <div className="Blurb">
                                 <p id="FullstackBlurb">
                                     <strong>Personal Website</strong><br />
-                                    Originally written in plain Js and Html, I've rewritten it in ReactJs.<br /><br />
+                                    This website! Originally written in plain Js and Html, I've rewritten it in ReactJs.<br /><br />
                                     <strong>Kanban Board</strong><br />
-                                    Final learning project at HCL America. Was a to-do list application written in ReactJs, and complete with a backend written in Java that saved into a MySQL database, and was deployed on AWS.<br /><br />
+                                    Final learning project at HCL America. Was a to-do list application written in ReactJs, with the backend written in Java, and saved into a MySQL database. At the time, I deployed on AWS.<br /><br />
                                 </p>
                             </div>
                         </div>
@@ -201,7 +212,7 @@ function Contact() {
                         <div className="Blurb">
                             <p id="AIE_Blurb">
                                 <strong>Location:</strong><br/>
-                                <strong>Seattle, WA</strong>
+                                <strong>Greater Seattle, WA Area</strong>
                             </p>
                             <p id="AIE_Blurb">
                                 <strong>LinkedIn:</strong><br/>

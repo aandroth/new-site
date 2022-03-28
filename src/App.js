@@ -25,8 +25,9 @@ import Peeka_YukkityUck from './Peeka_YukkityUck';
 import HireMe from './HireMe';
 import HireMe_Peeka from './HireMe_Peeka';
 import HireMe_HCL from './HireMe_HCL';
-import PracticeCards from './PracticeCards';
+import HireMe_Resume from './HireMe_Resume';
 
+import PracticeCards from './PracticeCards';
 function Home() {
     return (
         <div className="App">
@@ -73,14 +74,13 @@ function App() {
         setShowFooter(val);
     }
     return (
-        <Router basename="/">
-            <div className="theBody">
-
+        <Router basename="/" className="pageBody">
                 <Route path="/" exact component={HireMe} />
                 <Route path="/home" component={HireMe} />
 
                 <Route path="/peeka" component={HireMe_Peeka} />
                 <Route path="/hcl" component={HireMe_HCL} />
+                <Route path="/resume" component={HireMe_Resume} />
 
                 <Route path="/uaf_home" component={UAF_Home} />
                 <Route path="/fsapp" component={FS_App} />
@@ -104,9 +104,7 @@ function App() {
                 <Route path="/practicecards" component={PracticeCards} />
 
                 {showFooter && (
-                    <footer>
-                        <div className="Menu_Bar_Total">
-                            <table className="Menu_Bar_Table">
+                        <tfoot className="Menu_Bar_Table">
                                 <tr>
                                     <td>
                                         <div className="WAS_Menu_Bar_EndCap">
@@ -115,6 +113,15 @@ function App() {
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
                                             <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setHome_menuH(false)}>
+                                                {home_menuH && (
+                                                    <div>
+                                                        <ul className="Menu_List">
+                                                            <li>
+                                                                <div id="Menu_Resume" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('/resume')} ></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                )}
                                                 <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setHome_menuH)} onMouseUp={() => menuFns.mouseUp('/')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_Top" className="Menu_Button_Menu_Img"></div>
@@ -172,12 +179,15 @@ function App() {
                                     <td>
                                         <div className="Menu_Bar_Button_Holder">
                                             <div className="Menu_Bar_Button_Outer" onMouseLeave={() => setProj_home_menuH(false)}>
-                                                {proj_home_menuH && (
-                                                    <div>
-                                                        <ul className="Menu_List">
-                                                        </ul>
-                                                    </div>
-                                                )}
+                                            {/*{proj_home_menuH && (*/}
+                                            {/*        <div>*/}
+                                            {/*            <ul className="Menu_List">*/}
+                                            {/*                <li>*/}
+                                            {/*                    <div id="Menu_Kanban" className="Menu_List_Item" onMouseUp={() => menuFns.mouseUp('http://localhost:3006/')} ></div>*/}
+                                            {/*                </li>*/}
+                                            {/*            </ul>*/}
+                                            {/*        </div>*/}
+                                            {/*    )}*/}
                                                 <div className="Menu_Bar_Button_Inner" onMouseEnter={() => onEnterForAll(setProj_home_menuH)} onMouseUp={() => menuFns.mouseUp('/#Projects')} >
                                                     <img src={Menu_Bar_Space} width="100" height="100" className="Menu_Button_Space_Img" />
                                                     <div id="Menu_Projects" className="Menu_Button_Menu_Img"></div>
@@ -207,12 +217,9 @@ function App() {
                                             </div>
                                         </div>
                                     </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </footer>
-                )}
-            </div>
+                            </tr>
+                        </tfoot>
+            )}
         </Router>
     );
 }
