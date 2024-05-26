@@ -75,8 +75,8 @@ function App() {
     }
     return (
         <Router basename="/" className="pageBody">
-                <Route path="/" exact component={HireMe} />
-                <Route path="/home" component={HireMe} />
+            <Route path="/" exact component={HireMe}/>
+            <Route path="/home" component={HireMe}/>
 
                 <Route path="/peeka" component={HireMe_Peeka} />
                 <Route path="/hcl" component={HireMe_HCL} />
@@ -104,7 +104,7 @@ function App() {
                 <Route path="/practicecards" component={PracticeCards} />
 
                 {showFooter && (
-                        <tfoot className="Menu_Bar_Table">
+                <tfoot className="Menu_Bar_Table">
                                 <tr>
                                     <td>
                                         <div className="WAS_Menu_Bar_EndCap">

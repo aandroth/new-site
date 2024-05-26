@@ -1,3 +1,52 @@
+Create a series of opening tabs that allow the user to drill farther down
+ - skill keyword -> list of projects -> code for that skill in that project
+ - Have tool-tip pages that show a mini-page with a banner for the game and text about it. Clicking on the name or link will take the user to the page, and a Play Now link will be on both
+
+Theme is typed in by visitor, and it uses image generation to style the site
+So, type in "pizza" and the site will style everything with the word pizza, so pizza banner
+ - Can I do this with Micrososft's image generator?
+
+Redo the resume in the style of the website
+ - And have the sections show the tool-tip boxes, like on the main site
+
+Have a roulette wheel of different game projects (Accesses database)
+
+Favorite Projects
+ - Game Library
+ - Website
+ - Game Jams
+	 - Father Game // Need to finish
+	 - Rocket Ferret // Where is this?
+	 - Political Office Sim // Where is this?
+
+Meta and Peeka as proof of good collab skills w/ developer and cross-functional teams
+
+Website thoughts:
+ - Crisp, snazzy, minimal
+ - Boldly highlight projects
+ - Boldly highlight jobs
+	 - Say the biggest lesson learned for each role
+	 - Most enjoyable part of each
+
+Ideas:
+ - Have images in the background of the different blurb boxes that show what tech was used for each project
+ - Have each section come up over the previous one, with the titles becoming tabs at the top that the use can click on to go back to really fast
+ -- Have the border of the website look like Visual Studio, and have my name and profession be the name of the program at the top, above teh tabs
+ - MAKE SURE: to highlight that text box on hover so the user knows that it is clickable
+ - Host the game on an AWS GameLift computer so the user can play the game from the browser
+ - Allow the user to view the site from mobile screens and different screen sizes
+ - Have a different cursor for each section of the site
+ - Have a character in each section pointing out the next thing to interact with
+ - Think INTERACTIVE, how can I get the user to interact with the website?
+ -- Spinners, 3D objects the user can poke
+ -- Little wandering creatures the user can hit with an axe cursor
+ -- Little wandering creatures in a pen or cage, and the user can let them out, an then they just run around the section
+ --- Maybe have castle walls to keep everything inside of their own section
+ --- Have a creature with a swappable brain Linear Commands (turn right if hit wall)/state-based/random/Neural-Net
+ --- A mask that shows different visuals on the page (like inverting black and white)
+ --- Change colors based on mouse location (left to right) of the background
+ - Have a cool loading animation (or mini-game!) for when the website initially loads
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Going forward:
