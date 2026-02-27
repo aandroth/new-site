@@ -1,10 +1,11 @@
 Create a series of opening tabs that allow the user to drill farther down
  - skill keyword -> list of projects -> code for that skill in that project
- - Have tool-tip pages that show a mini-page with a banner for the game and text about it. Clicking on the name or link will take the user to the page, and a Play Now link will be on both
+ - Have tool-tip pages that show a mini-page with a banner for the game and text about it. 
+		Clicking on the name or link will take the user to the page, and a Play Now link will be on both
 
 Theme is typed in by visitor, and it uses image generation to style the site
 So, type in "pizza" and the site will style everything with the word pizza, so pizza banner
- - Can I do this with Micrososft's image generator?
+ - Can I do this with Microsoft's image generator?
 
 Redo the resume in the style of the website
  - And have the sections show the tool-tip boxes, like on the main site

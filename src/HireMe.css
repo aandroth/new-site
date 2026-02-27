@@ -1,19 +1,19 @@
 .HireMeDiv {
+    width: 100%;
     height: 100vh;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20vh;
 }
 
-#container1 {
-    height: 100%;
+.ColumnBlock {
+    position: relative;
+    top: 0px;
     width: 100%;
-    overflow: hidden;
-}
-
-#container2 {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    padding-right: 20px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20vh;
 }
 
 .TitleBlock {
@@ -74,55 +74,52 @@
 
 
 .BlurbTitle_2 {
-    position: relative;
     width: 90%;
 }
 
 .BlurbText_2 {
-    position: relative;
     margin-top: 0px;
-    width: 150%;
+    width: 100%;
 }
 
 .BlurbTitle_3 {
-    position: relative;
-    margin-top: -1000px;
     left: 10px;
     width: 90%;
+    font-size: 25px;
 }
 
 .BlurbText_3 {
-    position: relative;
-    margin-top: 100px;
-    left: 10px;
-    width: 90%;
+    width: 100%;
 }
 
 
 .Fullstack_Block_3 {
     float: left;
     width: 100%;
+    height: 100%;
     min-height: 100vh;
     background-color: darkgreen;
-    position: relative;
+    position: absolute;
     background-image: url("./Images/BG/Web/Bg_Web.png");
     overflow-x: hidden;
 }
 .Combo_Block_3 {
     float: left;
     width: 100%;
+    height: 100%;
     min-height: 100vh;
     background-color: teal;
-    position: relative;
+    position: absolute;
     right: 30%;
     background-image: url("./Images/BG/Bg_Combo3.png");
 }
 .Unity_Block_3 {
     float: left;
     width: 100%;
+    height: 100%;
     min-height: 100vh;
     background-color: blue;
-    position: relative;
+    position: absolute;
     right: 40%;
     background-image: url("./Images/BG/Games/Bg_Games.png");
 }
@@ -147,11 +144,14 @@
 }
 
 .Unity_Col {
-    float: left;
     width: 30%;
+    height: 100%;
     position: relative;
-    left: 70%;
     color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Images/BG/Games/Bg_Games.png");
+    padding-bottom: 20vh;
 }
     .Unity_Col p,
     .Unity_Col h1 {
@@ -159,10 +159,13 @@
     }
 
 .Combo_Col {
-    float: left;
     width: 40%;
+    height: 100%;
     position: relative;
-    left: 70%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Images/BG/Bg_Combo3.png");
+    padding-bottom: 20vh;
 }
     .Combo_Col p,
     .Combo_Col h1 {
@@ -170,10 +173,14 @@
     }
 
 .Fullstack_Col {
-    float: left;
+    bottom: 0px;
     width: 30%;
+    height: 100%;
     position: relative;
-    left: 70%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Images/BG/Web/Bg_Web.png");
+    padding-bottom: 20vh;
 }
     .Fullstack_Col p,
     .Fullstack_Col h1 {
@@ -182,19 +189,20 @@
 
 
 .Blurb {
-    padding-left: 5%;
+    position: relative;
+    width: 80%;
+    left: 7.5%;
+    margin-top: 20%;
     padding: 10px;
-}
-.Blurb p {
     background-color: black;
     border: 5px solid rgb(30,30,30);
     border-radius: 10px;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
-.Blurb h1 {
-    margin-top: 30%;
-    background-color: black;
-    border: 5px solid rgb(30,30,30);
-    padding: 5px;
-    border-radius: 10px;
-}
+    .Blurb p {
+        margin-top: 0px;
+    }
+    .Blurb h1 {
+        margin-top: 0px;
+    }
