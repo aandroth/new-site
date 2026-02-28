@@ -4,15 +4,17 @@ import "./HireMe.css";
 import { useRef } from 'react';
 import { useState, useEffect, useCallback } from "react";
 
+var topHeightNamecard = 0;
+
 function Summary() {
 
     return (
-        <div className="HireMeDiv" style={{ backgroundColor: "green" }}>
-            <div className="Info_NameCard" style={{ top: "0px", minWidth: "100%", minHeight: "120px", border: "1px solid white" }}>
-                <p style={{ top: "-60px", left: "0px", minWidth: "100%", minHeight: "25%" }}>AARON ANDREWS:</p>
-                <p id="NameCard_Title" style={{ top: "-60px", left: "50px", minHeight: "25%" }}>Unity Developer</p>
+        <div className="HireMeDiv">
+            <div className="Info_NameCard" style={{ position: "absolute", top:"0px", width: "100vw", display: "flex", flexDirection: "column", minHeight: "175px", border: "1px solid white" }}>
+                <p style={{ top: "0px", left: "0px", width: "28%", maxWidth: "40%"}}>AARON ANDREWS</p>
+                <p id="NameCard_Title" style={{ left: "50px", minHeight: "25%" }}>Unity Developer</p>
             </div>
-            <div className="ColumnBlock" style={{ backgroundColor: "red" }}>
+            <div className="ColumnBlock" style={{ top: "180px" }} >
                 <div className="Unity_Col">
                     <div className="Blurb">
                         <h1 className="BlurbTitle_3">
@@ -63,12 +65,14 @@ function Summary() {
 function Experience() {
     return (
         <div className="HireMeDiv">
-            <div className="Info_NameCard" style={{ top: "0px", minWidth: "100%", minHeight: "120px", border: "1px solid white" }}>
-                <p>
-                    Experience
-                </p>
+            <div className="Info_NameCard" style={{ top: "0px", minHeight: "120px"}}>
+                <div style={{ maxWidth: "500px"}}>
+                    <p style={{ top: "0px", left: "100px", width: "100%", zIndex: "10", border: "4px solid white" }}>
+                        Experience
+                    </p>
+                </div>
             </div>
-            <div className="ColumnBlock">
+            <div className="ColumnBlock" style={{ zIndex: "-10" }}>
                 <div className="Unity_Col">
                     <div className="Blurb">
                         <h1 className="BlurbTitle_3">
@@ -141,7 +145,7 @@ function Education() {
                 </div>
                 <div className="Fullstack_Col" style={{ width: "50%" }}>
                     <div className="Blurb">
-                        <h1 className="BlurbTitle_2" style={{ marginTop: "200px" }}>
+                        <h1 className="BlurbTitle_2">
                             <strong>HCL America</strong>
                         </h1>
                         <p className="BlurbText_2">
