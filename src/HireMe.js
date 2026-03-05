@@ -4,15 +4,61 @@ import "./HireMe.css";
 import { useRef } from 'react';
 import { useState, useEffect, useCallback } from "react";
 
+var scrollAmount = 0;
 var topHeightNamecard = 0;
+
+const m_windowHeight = window.outerHeight;
+var m_experienceHeight = (m_windowHeight);
+var m_educationHeight = (m_windowHeight * 2) + 70;
+var m_projectsHeight = (m_windowHeight * 3) + 120;
+var m_contactsHeight = (m_windowHeight * 4) + 185;
+
+var m_experienceMoving = false;
+var m_educationMoving = false;
+var m_projectsMoving = false;
+var m_contactsMoving = false;
+
+
+const setScrollAmount = (amount) => {
+    //window.scrollBy(0, amount);
+    window.scrollTo({ top: amount, left: 0, behavior: 'smooth' })
+}
 
 function Summary() {
 
     return (
         <div className="HireMeDiv">
-            <div className="Info_NameCard" style={{ position: "absolute", top:"0px", width: "100vw", display: "flex", flexDirection: "column", minHeight: "175px", border: "1px solid white" }}>
-                <p style={{ top: "0px", left: "0px", width: "28%", maxWidth: "40%"}}>AARON ANDREWS</p>
-                <p id="NameCard_Title" style={{ left: "50px", minHeight: "25%" }}>Unity Developer</p>
+            <div className="Info_NameCard" style={{ position: "fixed", top: "0px", width: "99vw", display: "flex", flexDirection: "row", justifyContent: "flex-start", minHeight: "175px", borderBottom: "1px solid white", zIndex: "100" }}>
+                <div style={{ position: "absolute", display: "flex", flexDirection: "row", padding: "0px", paddingRight: "20px", width: "100%", overflow: "hidden", minHeight: "50%", maxHeight: "50%", left: "0px", zIndex: "101", cursor: "pointer" }} onClick={() => setScrollAmount(0)}>
+                    <p style={{ left: "0px", marginRight: "20px", marginTop: "0px", marginBottom: "0px", paddingTop: "0px", paddingBottom: "0px", height: "50%", fontSize: "54px", color: "white" }}>AARON ANDREWS</p>
+                    <p style={{ marginTop: "4px", fontSize: "50px", color: "aqua" }}>Unity Developer</p>
+                </div>
+                <div style={{ minWidth: "30%", zIndex: "100", cursor: "pointer" }} onClick={() => setScrollAmount(0)}>
+                </div>
+                <div className="TopBarNameBlock" style={{paddingRight: "2vw", width:"25vw"}}>
+                    <div style={{ minHeight: "50%" }}></div>
+                    <p style={{ border: m_experienceMoving ? "4px solid white" : "4px solid #222222ff" }} onClick={() => setScrollAmount(m_experienceHeight+10)}>
+                        Experience
+                    </p>
+                </div>
+                <div className="TopBarNameBlock" style={{ paddingRight: "2vw", width: "22vw" }}>
+                    <div style={{ minHeight: "50%" }}></div>
+                    <p style={{ border: m_educationMoving ? "4px solid white" : "4px solid #222222ff" }} onClick={() => setScrollAmount(m_educationHeight + 10)}>
+                        Education
+                    </p>
+                </div>
+                <div className="TopBarNameBlock" style={{ paddingRight: "1vw", width: "20vw" }}>
+                    <div style={{ minHeight: "50%" }}></div>
+                    <p style={{ border: m_projectsMoving ? "4px solid white" : "4px solid #222222ff" }} onClick={() => setScrollAmount(m_projectsHeight + 10)}>
+                        Projects
+                    </p>
+                </div>
+                <div className="TopBarNameBlock" style={{ paddingRight: "5vw", width: "20vw" }}>
+                    <div style={{ minHeight: "50%" }}></div>
+                    <p style={{ border: m_contactsMoving ? "4px solid white" : "4px solid #222222ff" }} onClick={() => setScrollAmount(m_contactsHeight + 10)}>
+                        Contact
+                    </p>
+                </div>
             </div>
             <div className="ColumnBlock" style={{ top: "180px" }} >
                 <div className="Unity_Col">
@@ -65,9 +111,9 @@ function Summary() {
 function Experience() {
     return (
         <div className="HireMeDiv">
-            <div className="Info_NameCard" style={{ top: "0px", minHeight: "120px"}}>
-                <div style={{ maxWidth: "500px"}}>
-                    <p style={{ top: "0px", left: "100px", width: "100%", zIndex: "10", border: "4px solid white" }}>
+            <div className="Info_NameCard" style={{ top: "0px", minHeight: "120px", overflow: "hidden" }}>
+                <div style={{ maxWidth: "500px" }}>
+                    <p style={{ position: "absolute", top: "0px", left: "30vw", width: "17%", zIndex: "0", border: "4px solid white" }}>
                         Experience
                     </p>
                 </div>
@@ -124,8 +170,8 @@ function Experience() {
 function Education() {
     return (
         <div className="HireMeDiv">
-            <div className="Info_NameCard" style={{ top: "0px", minWidth: "100%", minHeight: "120px", border: "1px solid white" }}>
-                <p>Education</p>
+            <div className="Info_NameCard" style={{ minHeight: "120px", overflow: "hidden" }}>
+                <p style={{ position: "absolute", top: "0px", left: "47.3vw", width: "17%", border: "4px solid white" }}>Education</p>
             </div>
             <div className="ColumnBlock">
                 <div className="Unity_Col" style={{ width: "50%" }}>
@@ -171,8 +217,8 @@ function Projects() {
 
     return (
         <div className="HireMeDiv">
-            <div className="Info_NameCard" style={{ top: "0px", minWidth: "100%", minHeight: "120px", border: "1px solid white" }}>
-                <p>Projects</p>
+            <div className="Info_NameCard" style={{ top: "0px", minHeight: "120px", overflow: "hidden" }}>
+                <p style={{ position: m_projectsMoving ? "fixed" : "absolute", top: m_projectsMoving ? "50px" : "0px", left: "65vw", width: "12%", border: "4px solid white" }}>Projects</p>
             </div>
             <div className="ColumnBlock">
                 <div className="Unity_Col">
@@ -232,8 +278,8 @@ function Projects() {
 function Contact() {
     return (
         <div className="HireMeDiv">
-            <div className="Info_NameCard" style={{ top: "0px", minWidth: "100%", minHeight: "120px", border: "1px solid white" }}>
-                <p>Contact</p>
+            <div className="Info_NameCard" style={{ top: "0px", maxWidth: "99vw", minHeight: "120px", borderBottom: "1px solid white", overflow: "hidden" }}>
+                <p style={{ position:"absolute", top: "0px", left: "81.5vw", width: "16%", border: "4px solid white" }}>Contact</p>
             </div>
             <div className="ColumnBlock">
                 <div className="Unity_Col" style={{ width: "50%" }}>
@@ -270,10 +316,35 @@ function HireMeMain() {
     const [cc, setCC] = useState('black');
     const [blockSize, setBlockSize] = useState(window.innerHeight);
     const [experienceY, setExperienceY] = useState(0);
+    const [vertPosition, setVertPosition] = useState(0);
+    const [greenMoving, setGreenMoving] = useState(false);
+
+    const handleScroll = e => {
+        // style={{ top: "-1000px" }}  
+        const position = window.scrollY;
+        setVertPosition(Math.max(window.scrollY, 0));
+
+        setGreenMoving(window.scrollY >= m_windowHeight ? true : false);
+        m_experienceMoving = window.scrollY >= m_experienceHeight ? true : false;
+        m_educationMoving = window.scrollY >= m_educationHeight ? true : false;
+        m_projectsMoving = window.scrollY >= m_projectsHeight ? true : false;
+        m_contactsMoving = window.scrollY >= m_contactsHeight ? true : false;
+    }
+
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const handleWheel = e => {
         // style={{ top: "-1000px" }}  
         setExperienceY(Math.max(experienceY + e.deltaY, 0));
+        setVertPosition(Math.max(window.scrollY, 0));
     }
 
     useEffect(() => {
@@ -281,9 +352,8 @@ function HireMeMain() {
     }, [experienceY]);
 
 
-
     return (
-        <div style={{ display:"flex", flexDirection:"column" }} onWheel={(e) => handleWheel(e)}>
+        <div style={{ display: "flex", flexDirection: "column" }} onWheel={(e) => handleWheel(e)} onScroll={(e) => handleScroll(e)}>
             <Summary/>
             <Experience />
             <Education />

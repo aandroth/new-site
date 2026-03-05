@@ -6,6 +6,26 @@
     padding-bottom: 20vh;
 }
 
+.TopBarNameBlock {
+    padding: 0px;
+    padding-right: 20px;
+    width: 17%;
+    overflow: hidden;
+    min-height: 100%;
+    max-height: 100%;
+    left: 0px;
+    z-index: 100;
+}
+
+    .TopBarNameBlock p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        min-height: 50%;
+        width: 100%;
+        z-index: 210;
+        cursor: pointer;
+    }
+
 .ColumnBlock {
     position: relative;
     top: 0px;
@@ -28,17 +48,12 @@
 .NameCard {
     background-color: #222222ff;
     background-image: url("./Images/BG/Bg_Name.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
     width: 100%;
-    min-height: 10px;
+    padding-bottom: 0vh;
 }
     .NameCard p {
-        color: white;
         font-size: 50px;
         font-weight: 700;
-        position: relative;
         left: 1%;
         border: 4px solid white;
     }
@@ -48,7 +63,6 @@
 }
 
 #NameCard_Title {
-    max-width: 50%;
     float: left;
     color: aqua;
     font-weight: 700;
@@ -61,6 +75,7 @@
     min-height: 10px;
     height: 100px;
     position: relative;
+    border-bottom: 1px solid white;
 }
     .Info_NameCard p {
         color: white;
