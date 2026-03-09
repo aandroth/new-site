@@ -13,10 +13,14 @@ Redo the resume in the style of the website
 Have a roulette wheel of different game projects (Accesses database)
 
 Favorite Projects
+ - Latest Personal Projects
+	 - Masktego
+	 - Bubble Games
+	 - 
  - Game Library
  - Website
  - Game Jams
-	 - Father Game // Need to finish
+	 - Father Game // Need to finalize, latest pull from itch.io seemed to have some bugs
 	 - Rocket Ferret // Where is this?
 	 - Political Office Sim // Where is this?
 

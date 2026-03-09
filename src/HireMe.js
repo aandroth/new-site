@@ -27,7 +27,7 @@ const setScrollAmount = (amount) => {
 function Summary() {
 
     return (
-        <div className="HireMeDiv">
+        <div className="HireMeDiv" >
             <div className="Info_NameCard" style={{ position: "fixed", top: "0px", width: "99vw", display: "flex", flexDirection: "row", justifyContent: "flex-start", minHeight: "175px", borderBottom: "1px solid white", zIndex: "100" }}>
                 <div style={{ position: "absolute", display: "flex", flexDirection: "row", padding: "0px", paddingRight: "20px", width: "100%", overflow: "hidden", minHeight: "50%", maxHeight: "50%", left: "0px", zIndex: "101", cursor: "pointer" }} onClick={() => setScrollAmount(0)}>
                     <p style={{ left: "0px", marginRight: "20px", marginTop: "0px", marginBottom: "0px", paddingTop: "0px", paddingBottom: "0px", height: "50%", fontSize: "54px", color: "white" }}>AARON ANDREWS</p>
@@ -60,7 +60,8 @@ function Summary() {
                     </p>
                 </div>
             </div>
-            <div className="ColumnBlock" style={{ top: "180px" }} >
+            <div style={{ minHeight: "180px" }}></div>
+            <div className="ColumnBlock" >
                 <div className="Unity_Col">
                     <div className="Blurb">
                         <h1 className="BlurbTitle_3">
@@ -171,7 +172,7 @@ function Education() {
     return (
         <div className="HireMeDiv">
             <div className="Info_NameCard" style={{ minHeight: "120px", overflow: "hidden" }}>
-                <p style={{ position: "absolute", top: "0px", left: "47.3vw", width: "17%", border: "4px solid white" }}>Education</p>
+                <p style={{ position: "absolute", top: "0px", left: "48.7vw", width: "15%", border: "4px solid white" }}>Education</p>
             </div>
             <div className="ColumnBlock">
                 <div className="Unity_Col" style={{ width: "50%" }}>
@@ -218,7 +219,7 @@ function Projects() {
     return (
         <div className="HireMeDiv">
             <div className="Info_NameCard" style={{ top: "0px", minHeight: "120px", overflow: "hidden" }}>
-                <p style={{ position: m_projectsMoving ? "fixed" : "absolute", top: m_projectsMoving ? "50px" : "0px", left: "65vw", width: "12%", border: "4px solid white" }}>Projects</p>
+                <p style={{ paddingRight: "1.7vw", position: "absolute", top: "0px", left: "65.7vw", width: "12%", border: "4px solid white" }}>Projects</p>
             </div>
             <div className="ColumnBlock">
                 <div className="Unity_Col">
@@ -238,6 +239,10 @@ function Projects() {
                             <strong>Game Jams</strong>
                         </h1>
                         <p className="BlurbText_3">
+                            <Link to={'/masktego'} style={{ color: "deepskyblue" }}>
+                                <strong><u>Masktego</u> - Global Game Jam 2026</strong><br />
+                            </Link>
+                            Created for the 2026 Global Game Jam, this takes the theme of "mask" and applies it to the game of Stratego. Going for a smaller experience, the board and piece count were cut down to a simple rock-paper-scissors concept. This game is single player or multiplayer, connected over the web using an AWS container as the backend.<br /><br />
                             <strong>Generations - Global Game Jam 2023</strong><br />
                             Solo project where the player performs an action to learn a skill, dies, and then their next character has the skill, and can learn a new one.<br />
                             I created all of the art, programming, and design.<br /><br />
@@ -279,7 +284,7 @@ function Contact() {
     return (
         <div className="HireMeDiv">
             <div className="Info_NameCard" style={{ top: "0px", maxWidth: "99vw", minHeight: "120px", borderBottom: "1px solid white", overflow: "hidden" }}>
-                <p style={{ position:"absolute", top: "0px", left: "81.5vw", width: "16%", border: "4px solid white" }}>Contact</p>
+                <p style={{ position:"absolute", top: "0px", left: "80.5vw", width: "14%", border: "4px solid white" }}>Contact</p>
             </div>
             <div className="ColumnBlock">
                 <div className="Unity_Col" style={{ width: "50%" }}>
