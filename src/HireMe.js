@@ -20,12 +20,10 @@ var m_contactsMoving = false;
 
 
 const setScrollAmount = (amount) => {
-    //window.scrollBy(0, amount);
     window.scrollTo({ top: amount, left: 0, behavior: 'smooth' })
 }
 
 function Summary() {
-
     return (
         <div className="HireMeDiv" >
             <div className="Info_NameCard" style={{ position: "fixed", top: "0px", width: "99vw", display: "flex", flexDirection: "row", justifyContent: "flex-start", minHeight: "175px", borderBottom: "1px solid white", zIndex: "100" }}>

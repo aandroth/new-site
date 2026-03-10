@@ -77,34 +77,34 @@ function App() {
     }
     return (
         <Router basename="/" className="pageBody">
-            <Route path="/" exact component={HireMe}/>
-            <Route path="/home" component={HireMe}/>
+            <Route path="/" exact        component={HireMe}/>
+            <Route path="/home"          component={HireMe}/>
 
-                <Route path="/peeka" component={HireMe_Peeka} />
-                <Route path="/hcl" component={HireMe_HCL} />
-                <Route path="/resume" component={HireMe_Resume} />
-                <Route path="/masktego" component={HireMe_Masktego} />
+            <Route path="/peeka"         component={HireMe_Peeka} />
+            <Route path="/hcl"           component={HireMe_HCL} />
+            <Route path="/resume" exact  component={HireMe_Resume} />
+            <Route path="/masktego"      component={HireMe_Masktego} />
 
-                <Route path="/uaf_home" component={UAF_Home} />
-                <Route path="/fsapp" component={FS_App} />
-                <Route path="/profilefolder" component={Profile_Folder} />
-                <Route path="/sketchpad" component={SketchPad} />
-                <Route path="/checkersinfo" component={CheckersInfo} />
-                <Route path="/pokemoninfo" render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} />} />
-                <Route path="/dinaki" component={Dinaki_Book} />
+            <Route path="/uaf_home"      component={UAF_Home} />
+            <Route path="/fsapp"         component={FS_App} />
+            <Route path="/profilefolder" component={Profile_Folder} />
+            <Route path="/sketchpad"     component={SketchPad} />
+            <Route path="/checkersinfo"  component={CheckersInfo} />
+            <Route path="/pokemoninfo"   render={(props) => <PokemonInfo {...props} showFooterFn={showOrHideFooter} />} />
+            <Route path="/dinaki"        component={Dinaki_Book} />
 
-                <Route path="/aie_home" component={AIE_Home} />
-                <Route path="/gleethgod" component={AIE_GleethGod} />
-                <Route path="/robotrepair" component={AIE_RobotRepair} />
-                <Route path="/technoviking" component={AIE_TechnoViking} />
+            <Route path="/aie_home"      component={AIE_Home} />
+            <Route path="/gleethgod"     component={AIE_GleethGod} />
+            <Route path="/robotrepair"   component={AIE_RobotRepair} />
+            <Route path="/technoviking"  component={AIE_TechnoViking} />
 
-                <Route path="/graybubblegoo" component={Peeka_GrayBubbleGoo} />
-                <Route path="/pearl" component={Peeka_Pearl} />
-                <Route path="/rockhound" component={Peeka_Rockhound} />
-                <Route path="/yukkityuck" component={Peeka_YukkityUck} />
+            <Route path="/graybubblegoo" component={Peeka_GrayBubbleGoo} />
+            <Route path="/pearl"         component={Peeka_Pearl} />
+            <Route path="/rockhound"     component={Peeka_Rockhound} />
+            <Route path="/yukkityuck"    component={Peeka_YukkityUck} />
 
-                <Route path="/me" component={HireMe} />
-                <Route path="/practicecards" component={PracticeCards} />
+            <Route path="/me"            component={HireMe} />
+            <Route path="/practicecards" component={PracticeCards} />
 
         </Router>
     );
