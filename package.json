@@ -38,5 +38,6 @@
   },
   "devDependencies": {
     "react-swf": "^1.0.7"
-  }
+  },
+  "homepage": "www.aquinsgreatgames.com"
 }
