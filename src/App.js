@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import ReactDom from 'react-dom';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import * as menuFns from './Utilities/MenuBarButtons'
 import { Unity, useUnityContext } from "react-unity-webgl";
 
@@ -77,8 +78,9 @@ function App() {
     }
     return (
         <Router basename="/" className="pageBody">
-            <Route path="/" exact        component={HireMe}/>
-            <Route path="/home"          component={HireMe}/>
+	    <Routes>
+            <Route path="/"        element={<HireMe />}/>
+            <Route path="/home"          element={HireMe}/>
 
             <Route path="/peeka"         component={HireMe_Peeka} />
             <Route path="/hcl"           component={HireMe_HCL} />
@@ -105,7 +107,7 @@ function App() {
 
             <Route path="/me"            component={HireMe} />
             <Route path="/practicecards" component={PracticeCards} />
-
+	</Routes>
         </Router>
     );
 }
