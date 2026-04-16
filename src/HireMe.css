@@ -160,7 +160,6 @@
     width: 30%;
     height: 100%;
     position: relative;
-    color: deepskyblue;
     display: flex;
     flex-direction: column;
     background-image: url("./Images/BG/Games/Bg_Games.png");
@@ -168,7 +167,7 @@
 }
     .Unity_Col p,
     .Unity_Col h1 {
-        color: deepskyblue;
+        color: skyblue;
     }
 
 .Combo_Col {

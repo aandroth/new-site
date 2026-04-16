@@ -61,7 +61,7 @@ function Summary() {
             <div style={{ minHeight: "180px" }}></div>
             <div className="ColumnBlock" >
                 <div className="Unity_Col">
-                    <div className="Blurb">
+                    <div className="Blurb" style={{ top: "24%", marginTop: "0px"}}>
                         <h1 className="BlurbTitle_3">
                             <strong>Game Developer - Unity</strong>
                         </h1>
@@ -71,12 +71,12 @@ function Summary() {
                     </div>
                 </div>
                 <div className="Combo_Col">
-                    <div className="Blurb">
+                    <div className="Blurb" style={{ left: "7.5%", top: "2%", marginTop: "0px", marginBottom: "7%"}}>
                         <p className="BlurbText_3">
                             Alaskan-born software developer now living in the Greater Seattle Area. Looking to make my mark by creating games, software, and tools that customers love using, and that my fellow engineers love working with. Forever a student, I am always looking for new things to learn.<br /><br />
                         </p>
                     </div>
-                    <div className="Blurb">
+                    <div className="Blurb" style={{ left: "7.5%", top: "2%", marginTop: "0px", marginBottom: "7%" }}>
                         <h1 className="BlurbTitle_3">
                             <strong>Unity Prototyper</strong>
                         </h1>
@@ -84,16 +84,16 @@ function Summary() {
                             <b>1 year working as a Unity Developer prototyping frontend experiences, and connecting them to a backend.</b><br /><br />
                         </p>
                     </div>
-                    <div className="Blurb" style={{ display: "grid", placeItems: "center"}}>
+                    <div className="Blurb" style={{ left: "7.5%", top: "2%", marginTop: "0%"}}>
                         <p className="ComboBlurb_3">
                             <Link to={'/resume'} style={{ color: "aqua" }}>
-                                <strong style={{fontSize: "3em"}}>Resume</strong>
+                                <strong style={{ display: "grid", placeItems: "center", color: "aqua", fontSize: "3em"}}>Resume</strong>
                             </Link>
                         </p>
                     </div>
                 </div>
                 <div className="Fullstack_Col">
-                    <div className="Blurb">
+                    <div className="Blurb" style={{ top: "24%", marginTop: "0px" }}>
                         <h1 className="BlurbTitle_3">
                             <strong>Microservices</strong>
                         </h1>
@@ -117,13 +117,15 @@ function Experience() {
                     </p>
                 </div>
             </div>
-            <div className="ColumnBlock" style={{ zIndex: "-10" }}>
+            <div className="ColumnBlock">
                 <div className="Unity_Col">
                     <div className="Blurb">
                         <h1 className="BlurbTitle_3">
-                            <strong>Peeka,<br/>
-                                Unity Developer<br />(Part-Time)<br />
-                            Sep 2020 - Present<br /></strong>
+                            <Link to={'/peeka'} style={{ color: "skyblue" }}>
+                                <strong>Peeka</strong>
+                            </Link>
+                            <br /><strong>Unity Developer<br />(Part-Time)<br />
+                            Sep 2020 - Sep 2024<br /></strong>
                         </h1>
                         <p className="BlurbText_3">
                             At Peeka, I assisted in using the Unity game engine to fulfill the team's objective of bringing children's books to life with the power of virtual reality. My duties were creating the scenes the users would be in, programming interactions with the assets in those scenes, and general programming to make the books look and feel enjoyable.
@@ -135,7 +137,7 @@ function Experience() {
                 <div className="Combo_Col">
                     <div className="Blurb">
                         <h1 className="BlurbTitle_3">
-                            <strong>Meta,<br />
+                            <strong>Meta<br />
                                 Unity Developer<br />
                                 May 2022 - May 2023<br /></strong>
                         </h1>
@@ -147,7 +149,7 @@ function Experience() {
                 <div className="Fullstack_Col">
                     <div className="Blurb">
                         <h1 className="BlurbTitle_3">
-                            <strong>HCL America,<br />
+                            <strong>HCL America<br />
                             Jr Full Stack Developer<br />
                             July 2019 - Jan 2020</strong>
                         </h1>
@@ -173,12 +175,12 @@ function Education() {
                 <p style={{ position: "absolute", top: "0px", left: "48.7vw", width: "15%", border: "4px solid white" }}>Education</p>
             </div>
             <div className="ColumnBlock">
-                <div className="Unity_Col" style={{ width: "50%" }}>
+                <div className="Unity_Col">
                     <div className="Blurb">
-                        <h1 className="BlurbTitle_2">
+                        <h1 className="BlurbTitle_3">
                             <strong>Academy of Interactive Entertainment</strong>
                         </h1>
-                        <p className="BlurbText_2">
+                        <p className="BlurbText_3">
                             At the Academy of Interactive Entertainment I learned programming focused on video game development. This included graphics, AI, game loops, and more. During this two year course I completed several projects, and got multi-disciplinary teamwork skills on end-of-year projects where programmers were paired with artists and vfx students to create games.
                             <br />
                             <br />
@@ -188,12 +190,24 @@ function Education() {
                         </p>
                     </div>
                 </div>
-                <div className="Fullstack_Col" style={{ width: "50%" }}>
+                <div className="Combo_Col">
                     <div className="Blurb">
-                        <h1 className="BlurbTitle_2">
+                        <h1 className="BlurbTitle_3">
+                            <strong>AWS Certied Developer - Associate</strong>
+                        </h1>
+                        <p className="BlurbText_3">
+                            The main technologies in the course started with C++, creating basic game loops and graphics. We then began using the Unity game engine, writing our scripts in C#.
+                            <br />
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <div className="Fullstack_Col">
+                    <div className="Blurb">
+                        <h1 className="BlurbTitle_3">
                             <strong>HCL America</strong>
                         </h1>
-                        <p className="BlurbText_2">
+                        <p className="BlurbText_3">
                             At HCL America I was trained in Full Stack development, creating small websites and microservices. This training covered fundamentals of all aspects of full stack development, such as security, design, and data flow.
                             <br />
                             <br />
