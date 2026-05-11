@@ -29,6 +29,7 @@ import HireMe_Peeka from './HireMe_Peeka';
 import HireMe_HCL from './HireMe_HCL';
 import HireMe_Resume from './HireMe_Resume';
 import HireMe_Masktego from './HireMe_Masktego';
+import HireMe_Chat from './HireMe_Chat';
 
 import PracticeCards from './PracticeCards';
 function Home() {
@@ -86,6 +87,7 @@ function App() {
                 <Route path="/hcl" element={<HireMe_HCL />} />
             <Route path="/resume" exact  element={<HireMe_Resume />} />
                 <Route path="/masktego" element={<HireMe_Masktego />} />
+                <Route path="/chat" element={<HireMe_Chat />} />
 
                 <Route path="/uaf_home" element={<UAF_Home />} />
                 <Route path="/fsapp" element={<FS_App />} />
