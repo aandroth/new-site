@@ -37,7 +37,7 @@ function MasktegoMain() {
                 </p>
                 <p style={{ width: "70vw" }} >
                     <b>Github Server:</b> <a href="https://github.com/aandroth/Masktego_Server" target="_blank" rel="noopener noreferrer">Server</a>
-                </p>
+                </p> 
                 <p style={{width: "70vw"}} >
                     <b>Masktego</b> is a 2D game developed using Unity, made for the Global Game Jam 2026 as a combination of Rock-Papers-Scissors and Stratego a boardgame where you can't see what the other player's pieces are (until they are attacked or get attacked). 
                 </p>
